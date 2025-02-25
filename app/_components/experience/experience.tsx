@@ -28,20 +28,22 @@ export default function Experience() {
             company: "Company 3",
             position: "Position 3",
             date: "Date 3",
-            description: "Description"
+            description: "Description 3"
         }
     ]
 
     return (
         <section id="experience" className="flex flex-col px-4 py-4 gap-4">
             <SectionTitle title="Experience" />
-            {
-                experience.map((exp, index) => (
-                    <ExperienceCard key={index} company={exp.company} position={exp.position} date={exp.date} description={exp.description}>
-                       
-                    </ExperienceCard>
-                ))
-            }
+            <ol className="group/list flex flex-col gap-4">
+                {
+                    experience.map((exp, index) => (
+                        <ExperienceCard key={index} company={exp.company} position={exp.position} date={exp.date} description={exp.description}>
+
+                        </ExperienceCard>
+                    ))
+                }
+            </ol>
         </section>
     );
 }

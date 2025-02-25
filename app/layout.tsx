@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Archivo, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Pannel from "./_components/pannel/Header";
 import Header from "./_components/pannel/Header";
@@ -14,9 +14,14 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const archivo = Archivo({
+  variable: "--font-archivo",
+  subsets: ["latin"],
+});
+
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "Created with Next.js",
+  title: "Avotraina Rabe",
+  description: "Avotraina Rabe Portfolio",
 };
 
 export default function RootLayout({
@@ -27,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="light scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased leading-relaxed selection:bg-primary mx-auto max-w-screen-xl`}
+        className={`${geistSans.variable} ${geistMono.variable} ${archivo.variable} antialiased leading-relaxed selection:bg-primary mx-auto max-w-screen-xl`}
       >
 
         <div className="group/spotlight relative">

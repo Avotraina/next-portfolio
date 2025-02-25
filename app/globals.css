@@ -19,10 +19,14 @@
   .light {
     --background: #f7ede8;
     --foreground: #20130e;
+    --foreground-700: rgba(32, 19, 14, 0.7);
     --primary: #7b3918;
     --primary-100: rgba(123, 57, 24, 0.1);
     --secondary: #f29d73;
+    --secondary-50: rgba(242, 157, 115, 0.05);
+    --secondary-200: rgba(242, 157, 115, 0.2);
     --accent: #e34d02;
+    --accent-100: rgba(227, 77, 2, 0.1);
   }
 
   .dark {
@@ -41,6 +45,31 @@
   .social-icon {
     @apply hover:fill-[var(--primary)]
   }
+
+  h1, h2, h3, h4, h5, h6, span, p, a, li, button, div {
+    font-family: var(--font-archivo)
+  }
+
+  h1 {
+    @apply text-4xl tracking-tight sm:text-5xl;
+  }
+  h2 {
+    @apply text-lg sm:text-xl tracking-tight
+  }
+
+  p {
+    @apply leading-normal tracking-tight;
+  }
+
+  li {
+    @apply cursor-pointer;
+  }
+
+  .active {
+    @apply text-primary bg-green-500;
+  }
+  
+
 }
 
 /* body {
