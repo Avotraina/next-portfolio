@@ -6,7 +6,8 @@ import Navigation from "./Navigation";
 export default function Header() {
 
     return (
-        <header className="lg:sticky lg:top-0 lg:py-24 flex lg:max-h-screen lg:w-[30%] lg:flex-col lg:justify-between overflow-hidden border-r border-primary-100">
+        <header className="lg:sticky lg:top-0 lg:py-24 lg:flex lg:max-h-screen lg:w-[30%] lg:flex-col lg:justify-between border-r border-primary-100">
+        {/* <header className="lg:sticky lg:top-0 lg:py-24 lg:flex lg:max-h-screen lg:w-[30%] lg:flex-col lg:justify-between overflow-hidden border-r border-primary-100"> */}
             <div className="hero flex flex-col gap-4 py-4 px-4">
                 <div id="name">
                     <h1 className="font-bold">

@@ -12,7 +12,7 @@ const ProjectCard: React.FC<Project> = (props) => {
     const { title, date, picture, description, techs } = props;
 
     return (
-        <li className="group flex flex-col px-4 py-4 gap-4 rounded-sm bg-secondary-50 hover:bg-secondary-200 hover:!opacity-100 group-hover/list:opacity-70">
+        <li className="group flex flex-col px-4 py-2 gap-0 rounded-sm bg-secondary-50 hover:bg-secondary-200 hover:!opacity-100 group-hover/list:opacity-70 transition duration-300 ease-in-out">
 
             <header className="px-4 py-4 rounded-sm">
                 <h3 className="font-bold flex flex-row justify-between">
@@ -44,7 +44,7 @@ const ProjectCard: React.FC<Project> = (props) => {
 
             {/* Card body */}
 
-            <div className="flex flex-row gap-4 justify-start items-start">
+            <div className="flex flex-row max-sm:flex-wrap gap-4 justify-start items-start">
                 <img src="https://placehold.co/600x400" alt="image" loading="lazy" decoding="async" className="aspect-video object-contain rounded-sm" width={200} height={48} />
                 <div className="flex flex-col gap-4">
                     <p className="text-sm leading-normal">

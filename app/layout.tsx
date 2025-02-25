@@ -35,10 +35,11 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${archivo.variable} antialiased leading-relaxed selection:bg-accent-200 mx-auto max-w-screen-2xl`}
       >
 
-        <div className="group/spotlight relative">
-          <div className="fixed inset-0 z-30 lg:absolute">
+        <div className="relative">
+          <div className="fixed inset-0 z-30 lg:absolute max-lg:overflow-auto">
+          {/* <div className="fixed inset-0 z-30 lg:absolute"> */}
             <div className="mx-auto min-h-screen max-w-screen-xl">
-              <div className="lg:flex lg:justify-between lg:min-h-screen lg:gap-4">
+              <div className="lg:flex lg:justify-between min-h-screen lg:gap-4">
                 <Header />
                 {children}
               </div>
