@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <div>
+        <div className="border-t pt-4">
             <span>
                 Copyright 2024
             </span>

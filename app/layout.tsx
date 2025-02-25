@@ -32,12 +32,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="light scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${archivo.variable} antialiased leading-relaxed selection:bg-primary mx-auto max-w-screen-xl`}
+        className={`${geistSans.variable} ${geistMono.variable} ${archivo.variable} antialiased leading-relaxed selection:bg-accent-200 mx-auto max-w-screen-2xl`}
       >
 
         <div className="group/spotlight relative">
           <div className="fixed inset-0 z-30 lg:absolute">
-            <div className="mx-auto min-h-screen max-w-screen-xl ">
+            <div className="mx-auto min-h-screen max-w-screen-xl">
               <div className="lg:flex lg:justify-between lg:min-h-screen lg:gap-4">
                 <Header />
                 {children}
@@ -45,22 +45,6 @@ export default function RootLayout({
             </div>
           </div>
         </div>
-        
-
-
-        {/* <div className="group/spotlight relative">
-          <div className="fixed inset-0 z-30 lg:absolute">
-            <div className="mx-auto min-h-screen max-w-screen-xl ">
-              <div className="lg:flex lg:justify-between lg:gap-4">
-                <Pannel />
-                {children}
-              </div>
-            </div>
-          </div>
-        </div> */}
-
-
-
       </body>
     </html>
   );

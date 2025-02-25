@@ -16,6 +16,7 @@ export default {
         primary: "var(--primary)",
         accent: "var(--accent)",
         "accent-100": "var(--accent-100)",
+        "accent-200": "var(--accent-200)",
         "primary-100": "var(--primary-100)",
         "secondary-50": "var(--secondary-50)",
         "secondary-200": "var(--secondary-200)",

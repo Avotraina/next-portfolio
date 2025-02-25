@@ -2,9 +2,9 @@ import SectionTitle from "../shared/section-title";
 
 export default function About() {
     return (
-        <section id="about" className="flex flex-col px-4 py-4 gap-4">
+        <section id="about" className="flex flex-col px-4 py-4 gap-4 scroll-mt-16 lg:scroll-mt-24">
             <SectionTitle title="About" />
-            <div className="px-4 py-4">
+            <div className=" py-4">
                 <p className="mb-4 leading-normal text-foreground">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.
                 </p>

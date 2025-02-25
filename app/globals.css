@@ -27,6 +27,7 @@
     --secondary-200: rgba(242, 157, 115, 0.2);
     --accent: #e34d02;
     --accent-100: rgba(227, 77, 2, 0.1);
+    --accent-200: rgba(227, 77, 2, 0.2);
   }
 
   .dark {

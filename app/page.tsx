@@ -5,7 +5,7 @@ import Projects from "./_components/projects/projects";
 export default function Home() {
     return (
         // <div className="">
-        <main className="w-full flex flex-col flex-1 py-24 pt-24 lg:w-[52%] lg:py-24 gap-4">
+        <main className="w-full flex flex-col flex-1 py-24 pt-24 lg:w-[52%] lg:py-24 gap-4 max-w-screen-md">
             <About />
             <Experience />
             <Projects />

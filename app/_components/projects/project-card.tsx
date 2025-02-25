@@ -12,9 +12,9 @@ const ProjectCard: React.FC<Project> = (props) => {
     const { title, date, picture, description, techs } = props;
 
     return (
-        <li className="group flex flex-col px-4 py-4 gap-4 border rounded-sm border-red-600 bg-secondary-50 hover:bg-secondary-200 hover:!opacity-100 group-hover/list:opacity-70">
+        <li className="group flex flex-col px-4 py-4 gap-4 rounded-sm bg-secondary-50 hover:bg-secondary-200 hover:!opacity-100 group-hover/list:opacity-70">
 
-            <header className="border border-green-600 px-4 py-4 rounded-sm">
+            <header className="px-4 py-4 rounded-sm">
                 <h3 className="font-bold flex flex-row justify-between">
                     <div className="flex flex-row gap-4">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} className="group-hover:fill-accent"><path d="M22,7H13V2a1,1,0,0,0-1-1H2A1,1,0,0,0,1,2V22a1,1,0,0,0,1,1H22a1,1,0,0,0,1-1V8A1,1,0,0,0,22,7ZM11,13H3V11h8Zm0-5V9H3V7h8ZM3,15h8v2H3ZM11,3V5H3V3ZM3,19h8v2H3Zm18,2H13V9h8Zm-5-5H14V14h2Zm0,4H14V18h2Zm4-4H18V14h2Zm-4-4H14V10h2Zm4,0H18V10h2Zm0,8H18V18h2Z" /></svg>
@@ -53,7 +53,7 @@ const ProjectCard: React.FC<Project> = (props) => {
                     <ul className="flex flex-row gap-2 flex-wrap">
                         {
                             techs.map((tech, index) => (
-                                <li key={index} className="rounded-full bg-gray-200 px-4 py-2 text-xs font-bold bg-accent-100 text-accent">
+                                <li key={index} className="rounded-full px-4 py-2 text-xs font-bold bg-accent-100 text-accent">
                                     {tech}
                                 </li>
                             ))
