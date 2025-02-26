@@ -4,7 +4,7 @@ type SectionTitleProps = {
 
 export default function SectionTitle({title}: SectionTitleProps) {
     return (
-        <div className="flex flex-col sticky top-0 z-10 bg-background py-1">
+        <div className="flex flex-col max-lg:sticky max-lg:top-0 z-10 bg-background py-1">
             <span className="text-2xl font-bold">
                 {title}
             </span>

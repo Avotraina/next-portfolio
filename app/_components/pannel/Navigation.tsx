@@ -8,13 +8,6 @@ import { useEffect, useRef, useState } from "react";
 export default function Navigation() {
 
     const menu = ["About", "Experience", "Projects"];
-    // const menu = useState([
-    //     {
-    //         label: "About",
-    //         link: "#about",
-    //     }
-    // ])
-
 
     const [activeId, setActiveId] = useState<string | null>(null);
     const observer = useRef<IntersectionObserver | null>(null);
@@ -23,27 +16,62 @@ export default function Navigation() {
 
         const handleObserver = (entries: IntersectionObserverEntry[]) => {
             entries.forEach(entry => {
+                // entry.target.classList.toggle('active', entry.isIntersecting);
+
+
+                // const nav = document.getElementById(`link-${entry.target.id}`);
+                // nav?.classList.toggle('active', entry.isIntersecting);
+                // console.log("ENTRY IS INTERSECTING", entry.target);
+
+                let activeSection = null;
+
                 if (entry.isIntersecting) {
-                    setActiveId(entry.target.id);
-                    // entry.target.classList.add('active');
+                    activeSection = entry.target.id;
                 }
-                // else {
-                //     entry.target.classList.remove('active');
+
+                if (activeSection !== null) {
+                    setActiveId("link" + "-" + activeSection);
+                }
+
+                // if (entry.isIntersecting) {
+                //     setActiveId(entry.target.id);
+                //     console.log("ENTRY IS INTERSECTING", entry.target);
+                //     // entry.target.classList.add('active');
+                //     const nav = document.getElementById(`link-${entry.target.id}`);
+                //     nav?.classList.add('active');
+                // } else {
+                //     // entry.target.classList.remove('active');
+                //     const nav = document.getElementById(`link-${entry.target.id}`);
+                //     nav?.classList.remove('active');
                 // }
+
             });
         }
 
-        observer.current = new IntersectionObserver(handleObserver, {
+        observer.current = new IntersectionObserver((handleObserver), {
             root: null,
-            rootMargin: '-50% 0px -50% 0px',
-            threshold: 0.1
+            rootMargin: '0px',
+            threshold: 0.5
         });
 
-        const elements = menu.map((id) => document.getElementById(id));
+        const elements = menu.map((id) => document.getElementById(id.toLowerCase()));
         elements.forEach(element => element && observer.current?.observe(element));
 
         return () => observer.current?.disconnect();
     }, []);
+
+
+    // Detect when the user is at the bottom of the page
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+    //             setActiveId("link-" + menu[menu.length - 1].toLowerCase()); // Keep last section active
+    //         }
+    //     };
+
+    //     window.addEventListener("scroll", handleScroll);
+    //     return () => window.removeEventListener("scroll", handleScroll);
+    // }, []);
 
     return (
         <div className="py-6">
@@ -51,7 +79,7 @@ export default function Navigation() {
                 <ul className="flex flex-col gap-4">
                     {
                         menu.map((item, index) => (
-                            <li key={index} className="group hover:bg-primary-100">
+                            <li key={index} id={`link-${item.toLocaleLowerCase()}`} className={`group hover:bg-primary-100 ${activeId === `link-${item.toLowerCase()}` ? 'bg-primary-100' : ''}`}>
                                 <a href={`#${item.toLowerCase()}`} className="group  py-4 px-4 inline-block min-w-full">
                                     <span className="group-hover:font-bold w-full">{item}</span>
                                 </a>
