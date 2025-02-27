@@ -12,7 +12,7 @@ const ProjectCard: React.FC<Project> = (props) => {
     const { title, date, picture, description, techs } = props;
 
     return (
-        <li className="group flex flex-col px-4 py-2 gap-0 rounded-sm bg-secondary-50 hover:bg-secondary-200 hover:!opacity-100 group-hover/list:opacity-70 transition duration-300 ease-in-out">
+        <li className="group flex flex-col px-4 py-4 gap-0 rounded-sm bg-secondary-50 hover:bg-secondary-200 hover:!opacity-100 group-hover/list:opacity-70 transition duration-300 ease-in-out">
 
             <header className="px-4 py-4 rounded-sm">
                 <h3 className="font-bold flex flex-row justify-between">

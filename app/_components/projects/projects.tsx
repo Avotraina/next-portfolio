@@ -38,7 +38,7 @@ export default function Projects() {
     return (
         <section id="projects" className="flex flex-col px-4 py-4 gap-4 scroll-mt-16 lg:scroll-mt-24">
             <SectionTitle title="Projects" />
-            <ol className="group/list flex flex-col gap-4">
+            <ol className="group/list flex flex-col gap-6">
                 {
                     projects.map((project, index) => (
                         <ProjectCard key={index} title={project.title} date={project.date} picture={project.picture} description={project.description} techs={project.techs} />
