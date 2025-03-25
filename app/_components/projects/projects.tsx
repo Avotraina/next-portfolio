@@ -4,6 +4,7 @@ import ProjectCard from "./project-card";
 export type Project = Readonly<{
     title: string;
     date: string | null;
+    url?: string;
     picture: string;
     description: string;
     techs: string[];
@@ -13,26 +14,14 @@ export default function Projects() {
 
     const projects: Project[] = [
         {
-            title: "EGP-ARMP",
+            title: "NgxRabeStar",
             date: null,
-            picture: "Picture 1",
-            description: "Description 1",
-            techs: ["Tech 1", "Tech 2", "Tech 3"]
+            url: 'https://www.npmjs.com/package/ngx-rabe-star',
+            picture: "/images/NgxRabeStar.png",
+            description: "an Angular library that provides a customizable star rating component for Angular applications. It allows users to rate items using a visual star-based interface, making it easy to implement and integrate rating functionality into angular projects.",
+            techs: ["Angular"]
         },
-        {
-            title: "AMIT-SI", 
-            date: null,
-            picture: "Picture 2",
-            description: "Description 2",
-            techs: ["Tech 1", "Tech 2", "Tech 3"]
-        },
-        {
-            title: "Proxizone",
-            date: null,
-            picture: "Picture 3",
-            description: "Description 3",
-            techs: ["Tech 1", "Tech 2", "Tech 3"]
-        }
+        
     ]
 
     return (
@@ -41,7 +30,7 @@ export default function Projects() {
             <ol className="group/list flex flex-col gap-6">
                 {
                     projects.map((project, index) => (
-                        <ProjectCard key={index} title={project.title} date={project.date} picture={project.picture} description={project.description} techs={project.techs} />
+                        <ProjectCard key={index} title={project.title} date={project.date} picture={project.picture} description={project.description} techs={project.techs} url={project?.url} />
                     ))
                 }
             </ol>

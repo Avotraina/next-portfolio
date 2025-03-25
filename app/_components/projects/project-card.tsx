@@ -1,4 +1,5 @@
 import { Project } from "./projects";
+import Image from 'next/image'
 
 // type Children = Readonly<{
 //     company: string,
@@ -9,18 +10,18 @@ import { Project } from "./projects";
 
 const ProjectCard: React.FC<Project> = (props) => {
 
-    const { title, date, picture, description, techs } = props;
+    const { title, date, picture, description, techs, url } = props;
 
     return (
         <li className="group flex flex-col px-4 py-4 gap-0 rounded-sm bg-secondary-50 hover:bg-secondary-200 hover:!opacity-100 group-hover/list:opacity-70 transition duration-300 ease-in-out">
-
+            <a href={url} target="_blank" rel="noreferrer">
             <header className="px-4 py-4 rounded-sm">
                 <h3 className="font-bold flex flex-row justify-between">
                     <div className="flex flex-row gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} className="group-hover:fill-accent"><path d="M22,7H13V2a1,1,0,0,0-1-1H2A1,1,0,0,0,1,2V22a1,1,0,0,0,1,1H22a1,1,0,0,0,1-1V8A1,1,0,0,0,22,7ZM11,13H3V11h8Zm0-5V9H3V7h8ZM3,15h8v2H3ZM11,3V5H3V3ZM3,19h8v2H3Zm18,2H13V9h8Zm-5-5H14V14h2Zm0,4H14V18h2Zm4-4H18V14h2Zm-4-4H14V10h2Zm4,0H18V10h2Zm0,8H18V18h2Z" /></svg>
+                        {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} className="group-hover:fill-accent"><path d="M22,7H13V2a1,1,0,0,0-1-1H2A1,1,0,0,0,1,2V22a1,1,0,0,0,1,1H22a1,1,0,0,0,1-1V8A1,1,0,0,0,22,7ZM11,13H3V11h8Zm0-5V9H3V7h8ZM3,15h8v2H3ZM11,3V5H3V3ZM3,19h8v2H3Zm18,2H13V9h8Zm-5-5H14V14h2Zm0,4H14V18h2Zm4-4H18V14h2Zm-4-4H14V10h2Zm4,0H18V10h2Zm0,8H18V18h2Z" /></svg> */}
                         <span className="group-hover:text-accent text-base">{title}</span>
                     </div>
-                    <div className="flex flex-row gap-4">
+                    {/* <div className="flex flex-row gap-4">
                         <svg width="24" height="24" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" className="group-hover:stroke-accent">
                             <g fill="none" fillRule="evenodd" transform="translate(2 2)">
                                 <path d="m2.5.5h12c1.1045695 0 2 .8954305 2 2v12c0 1.1045695-.8954305 2-2 2h-12c-1.1045695 0-2-.8954305-2-2v-12c0-1.1045695.8954305-2 2-2z" className="group-hover:stroke-accent" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" />
@@ -38,17 +39,18 @@ const ProjectCard: React.FC<Project> = (props) => {
                         <div id="date">
                             <span className="group-hover:text-accent text-base tracking-tight">{date}</span>
                         </div>
-                    </div>
+                    </div> */}
                 </h3>
             </header>
 
             {/* Card body */}
 
             <div className="flex flex-row max-sm:flex-wrap gap-4 justify-start items-start">
-                <img src="https://placehold.co/600x400" alt="image" loading="lazy" decoding="async" className="aspect-video object-contain rounded-sm" width={200} height={48} />
+                {/* <img src="https://placehold.co/600x400" alt="image" loading="lazy" decoding="async" className="aspect-video object-contain rounded-sm" width={200} height={48} /> */}
+                <Image src={picture} alt="image" loading="lazy" decoding="async" className="aspect-video object-contain rounded-sm" width={200} height={48} />
                 <div className="flex flex-col gap-4">
                     <p className="text-sm leading-normal">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tenetur dolore aspernatur sed ullam. Modi odit ipsam obcaecati! Nostrum nam optio cum maxime iure totam autem, ipsam rerum! Earum laudantium esse architecto aliquam magnam, soluta quisquam quae rerum voluptatem, facilis dicta odit repellat? Sapiente aperiam nam temporibus cumque laborum, obcaecati quam debitis velit voluptatibus repellendus, eius accusantium, culpa et sunt autem. Reiciendis, ut. Sunt, laborum vero praesentium, iste cupiditate voluptates corrupti veniam pariatur numquam error sint inventore rem aspernatur quia.
+                        {description}
                     </p>
                     <ul className="flex flex-row gap-2 flex-wrap">
                         {
@@ -62,6 +64,7 @@ const ProjectCard: React.FC<Project> = (props) => {
                 </div>
 
             </div>
+            </a>
 
         </li>
     );
