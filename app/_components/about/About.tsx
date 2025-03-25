@@ -6,15 +6,19 @@ export default function About() {
             <SectionTitle title="About" />
             <div className=" py-4">
                 <p className="mb-4 leading-normal text-foreground">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.
+                    I'm a fullstack developer. I don't just write code, I craft solutions. Passionate about software development, I believe that clean, structured, and maintainable code is the foundation of scalable applications. My detail-oriented mindset drives me to create systems that are not only functional but also elegant in their simplicity.
                 </p>
-                
+
                 <p className="mb-4 leading-normal">
-                    Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices Maurois.
+                    For me, software development is more than just implementing features; it's about solving problems thoughtfully, optimizing for performance, and continuously improving. I’m always exploring new best practices and architectural patterns to refine my approach and build software that stands the test of time.
                 </p>
-                
+
                 <p className="mb-4 leading-normal">
-                    Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat.
+                    Currently, I'm looking for a new opportunity to work with a team of talented individuals who are passionate about building great software products.
+                </p>
+
+                <p className="mb-4 leading-normal">
+                    When I'm not coding, you can find me watching movies with my wife or playing a video games.
                 </p>
             </div>
         </section>

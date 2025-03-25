@@ -18,8 +18,16 @@ export default function Projects() {
             date: null,
             url: 'https://www.npmjs.com/package/ngx-rabe-star',
             picture: "/images/NgxRabeStar.png",
-            description: "an Angular library that provides a customizable star rating component for Angular applications. It allows users to rate items using a visual star-based interface, making it easy to implement and integrate rating functionality into angular projects.",
+            description: "An Angular library that provides a customizable star rating component for Angular applications. It allows users to rate items using a visual star-based interface, making it easy to implement and integrate rating functionality into angular projects.",
             techs: ["Angular"]
+        },
+        {
+            title: "Avotraina Rabe",
+            date: '',
+            url: '',
+            picture: "/images/Avotraina.png",
+            description: "My portfolio.",
+            techs: ["NextJS", "Tailwind CSS"],
         },
         
     ]
