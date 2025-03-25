@@ -6,19 +6,19 @@ export default function About() {
             <SectionTitle title="About" />
             <div className=" py-4">
                 <p className="mb-4 leading-normal text-foreground">
-                    I'm a fullstack developer. I don't just write code, I craft solutions. Passionate about software development, I believe that clean, structured, and maintainable code is the foundation of scalable applications. My detail-oriented mindset drives me to create systems that are not only functional but also elegant in their simplicity.
+                    I&apos;m a fullstack developer. I don&apos;t just write code, I craft solutions. Passionate about software development, I believe that clean, structured, and maintainable code is the foundation of scalable applications. My detail-oriented mindset drives me to create systems that are not only functional but also elegant in their simplicity.
                 </p>
 
                 <p className="mb-4 leading-normal">
-                    For me, software development is more than just implementing features; it's about solving problems thoughtfully, optimizing for performance, and continuously improving. I’m always exploring new best practices and architectural patterns to refine my approach and build software that stands the test of time.
+                    For me, software development is more than just implementing features; it&apos;s about solving problems thoughtfully, optimizing for performance, and continuously improving. I’m always exploring new best practices and architectural patterns to refine my approach and build software that stands the test of time.
                 </p>
 
                 <p className="mb-4 leading-normal">
-                    Currently, I'm looking for a new opportunity to work with a team of talented individuals who are passionate about building great software products.
+                    Currently, I&apos;m looking for a new opportunity to work with a team of talented individuals who are passionate about building great software products.
                 </p>
 
                 <p className="mb-4 leading-normal">
-                    When I'm not coding, you can find me watching movies with my wife or playing a video games.
+                    When I&apos;m not coding, you can find me watching movies with my wife or playing a video games.
                 </p>
             </div>
         </section>
