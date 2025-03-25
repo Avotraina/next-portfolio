@@ -10,7 +10,7 @@ import Image from 'next/image'
 
 const ProjectCard: React.FC<Project> = (props) => {
 
-    const { title, date, picture, description, techs, url } = props;
+    const { title, picture, description, techs, url } = props;
 
     return (
         <li className="group flex flex-col px-4 py-4 gap-0 rounded-sm bg-secondary-50 hover:bg-secondary-200 hover:!opacity-100 group-hover/list:opacity-70 transition duration-300 ease-in-out">

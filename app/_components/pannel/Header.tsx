@@ -1,6 +1,7 @@
 import Social from "@/app/_items/Social";
 import Footer from "./Footer";
 import Navigation from "./Navigation";
+import Link from "next/link";
 // import { useEffect, useRef, useState } from "react";
 
 export default function Header() {
@@ -11,9 +12,9 @@ export default function Header() {
             <div className="hero flex flex-col gap-4 py-4 px-4">
                 <div id="name">
                     <h1 className="font-bold">
-                        <a href="/">
+                        <Link href="/">
                             Avotraina Rabe
-                        </a>
+                        </Link>
                     </h1>
                 </div>
                 <div id="title">

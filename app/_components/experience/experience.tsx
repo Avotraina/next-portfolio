@@ -1,4 +1,3 @@
-import Card from "../shared/card";
 import SectionTitle from "../shared/section-title";
 import ExperienceCard from "./experience-card";
 
@@ -142,7 +141,7 @@ const date: { [key: string]: string } = {
 
 
             {
-                Object.entries(experience).map(([companyName, experiences], index) => (
+                Object.entries(experience).map(([companyName, experiences]) => (
                     <div key={companyName} className="mb-4">
                         <h2 className="font-semibold flex flex-col gap-2">
                             <span>
