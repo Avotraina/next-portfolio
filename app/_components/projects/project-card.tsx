@@ -23,7 +23,7 @@ const ProjectCard: React.FC<Project> = (props) => {
                     <div className="flex flex-row gap-4">
                         <svg width="24" height="24" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" className="group-hover:stroke-accent">
                             <g fill="none" fillRule="evenodd" transform="translate(2 2)">
-                                <path d="m2.5.5h12c1.1045695 0 2 .8954305 2 2v12c0 1.1045695-.8954305 2-2 2h-12c-1.1045695 0-2-.8954305-2-2v-12c0-1.1045695.8954305-2 2-2z" className="group-hover:stroke-accent"  stroke="#000000" strokeLinecap="round" strokeLinejoin="round" />
+                                <path d="m2.5.5h12c1.1045695 0 2 .8954305 2 2v12c0 1.1045695-.8954305 2-2 2h-12c-1.1045695 0-2-.8954305-2-2v-12c0-1.1045695.8954305-2 2-2z" className="group-hover:stroke-accent" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="m.5 4.5h16" className="group-hover:stroke-accent" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" />
                                 <g fill="#000000">
                                     <circle cx="8.5" cy="8.5" r="1" />
@@ -53,7 +53,7 @@ const ProjectCard: React.FC<Project> = (props) => {
                     <ul className="flex flex-row gap-2 flex-wrap">
                         {
                             techs.map((tech, index) => (
-                                <li key={index} className="rounded-full px-4 py-2 text-xs font-bold bg-accent-100 text-accent">
+                                <li key={index} className="rounded-full px-4 py-2 text-xs font-semibold bg-accent-100 text-accent">
                                     {tech}
                                 </li>
                             ))

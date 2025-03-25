@@ -4,44 +4,56 @@ import ExperienceCard from "./experience-card";
 
 type Experience = Readonly<{
     company: string;
-    position: string;
+    position: string[];
     date: string;
     description: string;
+    techs?: string[];
 }>
 
 export default function Experience() {
 
     const experience: Experience[] = [
         {
-            company: "Ingenosya",
-            position: "Intern",
+            company: "Ingenosya - Fullstack internship",
+            position: ["Confidential project"],
             date: "Date 1",
-            description: "Description 1"
+            description: `
+
+                A digital platform that streamlines and automates public procurement processes, improving efficiency, transparency, and accessibility for government entities.
+            
+                Joined an existing cross-functional development team as intern to contribute to the ongoing project. 
+
+                I handled both frontend and backend tasks simultaneously. I also occasionally wrote automation scripts using PostgreSQL.
+            
+            `,
+            techs: ['CodeIgniter', 'Angular', 'Typescript', 'PostgreSQL', 'Angular Material'],
         },
         {
-            company: "Ingenosya",
-            position: "Fullstack developer",
+            company: "Ingenosya - Frontend developer",
+            position: ["Confidential project"],
             date: "Date 2",
-            description: "Description 2"
+            description: `
+
+                A client project involving a healthcare management system designed to streamline patient queueing, appointment scheduling, and resource allocation. My role included full-stack development, contributing to both frontend and backend functionalities to ensure a seamless and efficient experience for users.
+
+            `,
+            techs: ['Angular', 'Angular Material', 'JavaScript', 'TypeScript']
         },
         {
-            company: "Relia",
-            position: "Frontend developer",
+            company: "Relia consulting - Frontend developer / Lead developer",
+            position: ["Confidential project"],
             date: "Date 3",
-            description: "Description 3"
+            description: `
+            
+                A food delivery platform similar to Uber Eats.
+                
+                Joined an existing cross-functional development team as a frontend developer to contribute to the ongoing project. Became lead developer on the project after the lead developer was promoted to the project manager post.
+
+                Other than the developement, I was responsible for validating merge request, ensuring clean code for the project.
+
+            `,
+            techs: ['Angular', 'Angular Material', 'JavaScript', 'TypeScript', 'Laravel', 'Mysql'],
         },
-        {
-            company: "Lead developer",
-            position: "Frontend developer",
-            date: "Date 3",
-            description: "Description 3"
-        },
-        {
-            company: "Lead developer",
-            position: "Frontend developer",
-            date: "Date 3",
-            description: "Description 3"
-        }
     ]
 
     return (
@@ -50,7 +62,7 @@ export default function Experience() {
             <ol className="group/list flex flex-col gap-6">
                 {
                     experience.map((exp, index) => (
-                        <ExperienceCard key={index} company={exp.company} position={exp.position} date={exp.date} description={exp.description}>
+                        <ExperienceCard key={index} company={exp.company} position={exp.position} date={exp.date} description={exp.description} techs={exp.techs}>
 
                         </ExperienceCard>
                     ))

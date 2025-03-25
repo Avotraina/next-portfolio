@@ -3,7 +3,7 @@ import ProjectCard from "./project-card";
 
 export type Project = Readonly<{
     title: string;
-    date: string;
+    date: string | null;
     picture: string;
     description: string;
     techs: string[];
@@ -13,22 +13,22 @@ export default function Projects() {
 
     const projects: Project[] = [
         {
-            title: "Project 1",
-            date: "Date 1",
+            title: "EGP-ARMP",
+            date: null,
             picture: "Picture 1",
             description: "Description 1",
             techs: ["Tech 1", "Tech 2", "Tech 3"]
         },
         {
-            title: "Project 2",
-            date: "Date 2",
+            title: "AMIT-SI", 
+            date: null,
             picture: "Picture 2",
             description: "Description 2",
             techs: ["Tech 1", "Tech 2", "Tech 3"]
         },
         {
-            title: "Project 3",
-            date: "Date 3",
+            title: "Proxizone",
+            date: null,
             picture: "Picture 3",
             description: "Description 3",
             techs: ["Tech 1", "Tech 2", "Tech 3"]

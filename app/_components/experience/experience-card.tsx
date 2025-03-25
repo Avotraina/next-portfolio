@@ -1,13 +1,14 @@
 type Children = Readonly<{
   company: string,
-  position: string,
+  position: string[],
   date: string,
-  description: string
+  description: string,
+  techs?: string[]
 }>;
 
 const ExperienceCard: React.FC<Children> = (props) => {
 
-  const { company, position, date, description } = props;
+  const { company, position, date, description, techs } = props;
 
   return (
     <li className="group flex flex-col px-4 py-4 gap-0 rounded-sm bg-secondary-50 hover:bg-secondary-200 hover:!opacity-100 group-hover/list:opacity-70 transition duration-300 ease-in-out">
@@ -43,8 +44,17 @@ const ExperienceCard: React.FC<Children> = (props) => {
       <div id="experience-body" className="flex flex-col px-4 py-4 gap-4 rounded-sm">
         <h4 className="text-base font-bold tracking-tight text-foreground-700 group-hover:text-accent">{position}</h4>
         <p className="text-sm leading-normal">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quasi provident quibusdam est sapiente, eaque mollitia rerum ab praesentium. Esse, unde culpa molestias perspiciatis sequi excepturi impedit veniam accusantium! Tenetur beatae, accusamus nemo excepturi eaque ab. Reiciendis, ea, et deserunt soluta asperiores in, voluptatem odio eaque esse tempora error consequuntur aperiam earum! Alias iure eveniet tempore autem recusandae quod, dolorum ipsam. Nulla amet libero dolorum et vel enim voluptate quae debitis maxime. Enim odit ea optio quaerat esse aut ipsam voluptates beatae nisi, suscipit, ipsum, repellendus fuga commodi. Ex tempore aspernatur sequi nesciunt inventore perspiciatis debitis ducimus suscipit voluptate nemo repellat, eaque veritatis consequuntur vero excepturi quo.
+          {description}
         </p>
+        <ul className="flex flex-row gap-2 flex-wrap">
+          {
+            techs?.map((tech, index) => (
+              <li key={index} className="rounded-full px-4 py-2 text-xs font-semibold bg-accent-100 text-accent">
+                {tech}
+              </li>
+            ))
+          }
+        </ul>
       </div>
 
     </li>
