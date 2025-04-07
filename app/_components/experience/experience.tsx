@@ -27,10 +27,10 @@ type T_Experience = Readonly<{
 
 export default function Experience() {
 
-    const date: { [key: string]: string } = {
-        Ingenosya: "Apr 2021 - May 2022",
-        "Relia consulting": "May 2022 - September 2024"
-    };
+    // const date: { [key: string]: string } = {
+    //     Ingenosya: "Apr 2021 - May 2022",
+    //     "Relia consulting": "May 2022 - September 2024"
+    // };
 
     const experience: T_Experience = Object.entries(experienceItems).reverse().map(
         ([company, data]) => ({

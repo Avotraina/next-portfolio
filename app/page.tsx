@@ -1,7 +1,6 @@
 import About from "./_components/about/About";
 import Contact from "./_components/contact/contact";
 import Experience from "./_components/experience/experience";
-import Footer from "./_components/pannel/Footer";
 import Projects from "./_components/projects/projects";
 
 export default function Home() {
