@@ -37,7 +37,7 @@ export default function Projects() {
             <SectionTitle title="Projects" />
             <ol className="group/list flex flex-col gap-6">
                 {
-                    projects.map((project, index) => (
+                    projects.reverse().map((project, index) => (
                         <ProjectCard key={index} title={project.title} date={project.date} picture={project.picture} description={project.description} techs={project.techs} url={project?.url} />
                     ))
                 }

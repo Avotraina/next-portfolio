@@ -1,0 +1,76 @@
+{
+    "techs": [
+        {
+            "title": "Javascript",
+            "logo": "/images/techs/javascript.svg"
+        },
+        {
+            "title": "TypeScript",
+            "logo": "/images/techs/typescript.svg"
+        },
+        {
+            "title": "HTML",
+            "logo": "/images/techs/html.svg"
+        },
+        {
+            "title": "CSS",
+            "logo": "/images/techs/css.svg"
+        },
+        {
+            "title": "SCSS",
+            "logo": "/images/techs/scss.svg"
+        },
+        {
+            "title": "PHP",
+            "logo": "/images/techs/php.svg"
+        },
+        {
+            "title": "SQL",
+            "logo": "/images/techs/sql.svg"
+        },
+        {
+            "title": "PostgreSQL",
+            "logo": "/images/techs/postgresql.svg"
+        },
+        {
+            "title": "Laravel",
+            "logo": "/images/techs/laravel.svg"
+        },
+        {
+            "title": "MySQL",
+            "logo": "/images/techs/mysql.svg"
+        },
+        {
+            "title": "Git",
+            "logo": "/images/techs/git.svg"
+        },
+        {
+            "title": "GitHub",
+            "logo": "/images/techs/github.svg"
+        },
+        {
+            "title": "GitLab",
+            "logo": "/images/techs/gitlab.svg"
+        },
+        {
+            "title": "Angular",
+            "logo": "/images/techs/angular.svg"
+        },
+        {
+            "title": "React",
+            "logo": "/images/techs/react.svg"
+        },
+        {
+            "title": "Next.js",
+            "logo": "/images/techs/nextjs.svg"
+        },
+        {
+            "title": "Tailwind CSS",
+            "logo": "/images/techs/tailwindcss.svg"
+        },
+        {
+            "title": "Angular Material",
+            "logo": "/images/techs/angularmaterial.svg"
+        }
+    ]
+}

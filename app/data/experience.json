@@ -1,0 +1,87 @@
+{
+    "Ingenosya": {
+        "posts": [
+            "Frontend developer",
+            "Angular developer (Internship)"
+        ],
+        "date": "Apr 2021 - May 2022",
+        "description": [
+            {
+                "title": "Frontend development",
+                "description": "Responsible for developing and maintaining the frontend of client projects, ensuring a seamless user experience. I collaborated with the backend team to design and implement APIs, ensuring efficient data retrieval and manipulation. Assisted new interns in integrating into the team by providing technical guidance and onboarding support."
+            },
+            {
+                "title": "Backend development",
+                "description": "I often helped the backend team to develop APIs ensuring efficient data retrieval and manipulation for web application. I also managed to write some SQL queries and scripts to automate repetitive tasks, enhancing database performance and reliability."
+            },
+            {
+                "title": "Version control",
+                "description": "Used Git for version control, enabling efficient collaboration and code management within development teams. I am proficient in branching, merging, and resolving conflicts to maintain a clean and organized codebase."
+            }
+        ],
+        "technologies": [
+            "Angular",
+            "Javascript",
+            "TypeScript",
+            "HTML",
+            "CSS",
+            "SCSS",
+            "Angular Material",
+            "Git",
+            "GitHub",
+            "CodeIgniter",
+            "PostgreSQL"
+        ]
+    },
+
+    "Relia consulting": {
+        "posts": [
+            "Lead developer",
+            "Fullstack developer",
+            "Frontend developer"
+        ],
+        "date": "May 2022 - September 2024",
+        "description": [
+            {
+                "title": "Fullstack development",
+                "description": "Collaborated with cross-functional teams to develop and maintain client projects,specifically on both web and mobile applications. My role includes building dynamic user interfaces on the frontend and develop secure, scalable backend services to support application logic, data management, and API integrations."
+            },
+            {
+                "title": "Database management",
+                "description": "Designed and manage databases alongside the backend team and teamlead."
+            },
+            {
+                "title": "API development",
+                "description": "Developed and integrated RESTful APIs, implementing secure authentication and efficient data handling to support smooth communication between the front end and back end."
+            },
+            {
+                "title": "Version control",
+                "description": "Used Git for version control, enabling efficient collaboration and code management within development teams. I am proficient in branching, merging, and resolving conflicts to maintain a clean and organized codebase."
+            },
+            {
+                "title": "Team leading",
+                "description": "Was responsible for leading a team of interns, sharing knowledge, and guiding them throughout the development of an internal project and a client project."
+            }
+        ],
+        "technologies": [
+            "Angular",
+            "Angular Material",
+            "React",
+            "Next.js",
+            "React Native",
+            "Javascript",
+            "TypeScript",
+            "HTML",
+            "CSS",
+            "SCSS",
+            "Git",
+            "GitLab",
+            "Laravel",
+            "Alpine.js",
+            "Spring boot",
+            "Mysql",
+            "PostgreSQL",
+            "MongoDB"
+        ]
+    }
+}

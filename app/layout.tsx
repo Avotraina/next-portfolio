@@ -20,7 +20,7 @@ const archivo = Archivo({
 
 export const metadata: Metadata = {
   title: "Avotraina Rabe",
-  description: "Avotraina Rabe Portfolio",
+  description: "Avotraina Rabe is a web developer with a passion for creating beautiful and functional websites.",
 };
 
 export default function RootLayout({

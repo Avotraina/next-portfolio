@@ -1,13 +1,11 @@
 "use client"
 
 
-// import { useState } from "react";
-
 import { useEffect, useRef, useState } from "react";
 
 export default function Navigation() {
 
-    const menu = ["About", "Experience", "Projects"];
+    const menu = ["About", "Experience", "Projects", "Contact"];
 
     const [activeId, setActiveId] = useState<string | null>(null);
     const observer = useRef<IntersectionObserver | null>(null);
@@ -51,7 +49,7 @@ export default function Navigation() {
         observer.current = new IntersectionObserver((handleObserver), {
             root: null,
             rootMargin: '0px',
-            threshold: 0.2
+            threshold: 0.5
         });
 
         const elements = menu.map((id) => document.getElementById(id.toLowerCase()));

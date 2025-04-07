@@ -1,0 +1,50 @@
+{
+    "Ingenosya": {
+        "posts": [
+            "Angular developer (Internship)",
+            "Angular developer"
+        ],
+        "date": "Apr 2021 - May 2022",
+        "description": "After 6 months, I was hired as a full-time Angular developer. Joined an existing cross-functional development team as an intern to contribute to an ongoing government project as an Angular developer. During the development process, I also collaborated with the backend team to help design and implement APIs and wrote some SQL queries to automated repetitive tasks. After six months, I was hired as a full-time frontend developer and assigned to a new team to work on a client project as a frontend developer ensuring seamless integration with backend services. Assisted new interns in integrating into the team by providing technical guidance and onboarding support.",
+        "technologies": [
+            "Angular",
+            "Javascript",
+            "TypeScript",
+            "HTML",
+            "CSS",
+            "SCSS",
+            "Angular Material",
+            "Git",
+            "CodeIgniter",
+            "PostgreSQL"
+        ]
+    },
+    "Relia consulting": {
+        "posts": [
+            "Frontend developer",
+            "Fullstack developer",
+            "Lead developer"
+        ],
+        "date": "May 2022 - September 2024",
+        "description": "Joined a small team of developers to work on a client project as a frontend developer. Worked on the frontend part of the project to ensure seamless integration with backend services. Assisted in the development of a web application using Angular, HTML, CSS, and JavaScript. Collaborated with the backend team to help design and implement APIs.",
+        "technologies": [
+            "Angular",
+            "Angular Material",
+            "React",
+            "Next.js",
+            "React Native",
+            "Javascript",
+            "TypeScript",
+            "HTML",
+            "CSS",
+            "SCSS",
+            "Git",
+            "Laravel",
+            "Alpine.js",
+            "Spring boot",
+            "Mysql",
+            "PostgreSQL",
+            "MongoDB"
+        ]
+    }
+}
