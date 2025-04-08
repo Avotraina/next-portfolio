@@ -8,13 +8,9 @@ export default function Home() {
         // <div className="">
         <main className="flex flex-col flex-1 py-24 pt-24 lg:w-[52%] lg:py-24 gap-4 max-w-screen-md">
             <About />
-            <article>
-                <Experience />
-            </article>
+            <Experience />
             <Projects />
-            <article>
-                <Contact/>
-            </article>
+            <Contact />
             <div className="border-t pt-4 mt-4 px-4 block lg:hidden">
                 <span className="text-xs">
                     Developed with NextJS and Tailwind CSS

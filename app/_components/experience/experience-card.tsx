@@ -13,8 +13,6 @@ const ExperienceCard: React.FC<Children> = (props) => {
   return (
     <li className="group flex flex-col px-4 py-4 gap-0 rounded-sm bg-secondary-50 hover:bg-secondary-200 hover:!opacity-100 group-hover/list:opacity-70 transition duration-300 ease-in-out">
       <article>
-
-
         <header className="px-4 py-4 rounded-sm">
           {/* <h3 className="font-bold flex flex-row justify-between"> */}
           {/* <div className="flex flex-row gap-4"> */}
@@ -83,15 +81,17 @@ const ExperienceCard: React.FC<Children> = (props) => {
             }
           </ul>
 
-          <ul className="flex flex-row gap-2 flex-wrap">
-            {
-              techs?.map((tech, index) => (
-                <li key={index} className="rounded-full px-4 py-2 text-xs font-semibold bg-accent-100 text-accent">
-                  {tech}
-                </li>
-              ))
-            }
-          </ul>
+          <footer>
+            <ul className="flex flex-row gap-2 flex-wrap">
+              {
+                techs?.map((tech, index) => (
+                  <li key={index} className="rounded-full px-4 py-2 text-xs font-semibold bg-accent-100 text-accent">
+                    {tech}
+                  </li>
+                ))
+              }
+            </ul>
+          </footer>
         </div>
       </article>
     </li>
