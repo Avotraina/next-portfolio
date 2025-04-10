@@ -1,7 +1,5 @@
 "use client"
 
-import { useCurrentLocale } from "@/locales/client";
-
 type Children = Readonly<{
   company: string,
   position: string[],
@@ -14,8 +12,6 @@ type Children = Readonly<{
 function ExperienceCard(props: Children) {
 
   const { company, position, description, techs, date } = props;
-
-  const i = useCurrentLocale()
 
   return (
     <li className="group flex flex-col px-4 py-4 gap-0 rounded-sm bg-secondary-50 hover:bg-secondary-200 hover:!opacity-100 group-hover/list:opacity-70 transition duration-300 ease-in-out">

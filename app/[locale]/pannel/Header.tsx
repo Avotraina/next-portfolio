@@ -2,7 +2,7 @@ import Social from "@/app/_items/Social";
 import Footer from "./Footer";
 import Navigation from "./Navigation";
 import Link from "next/link";
-import { getI18n, getScopedI18n } from "@/locales/server";
+import { getScopedI18n } from "@/locales/server";
 
 export default async function Header() {
 
