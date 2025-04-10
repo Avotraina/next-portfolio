@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
 import { Archivo, Geist, Geist_Mono } from "next/font/google";
-// import "./globals.css";
 import "@/app/globals.css";
 import Header from "./pannel/Header";
 import { Providers } from "./providers";
 import React from "react";
-import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { LocaleSelect } from "../hooks/locale-select";
 
 const geistSans = Geist({
@@ -50,7 +48,6 @@ export default async function RootLayout({
 
           <div className="relative">
             <div className="fixed inset-0 z-30 lg:absolute max-lg:overflow-auto justify-center">
-              {/* <div className="fixed inset-0 z-30 lg:absolute"> */}
               <div className="mx-auto min-h-screen max-w-screen-xl">
                 <div className="lg:flex lg:justify-between min-h-screen lg:gap-4">
                   <Header />

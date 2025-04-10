@@ -2,15 +2,6 @@
 
 // import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useChangeLocale, useCurrentLocale } from "@/locales/client";
-import {
-  Dropdown,
-  DropdownTrigger,
-  DropdownMenu,
-  DropdownSection,
-  DropdownItem,
-} from "@heroui/dropdown";
-
-import { Button } from "@heroui/button";
 import { Select, SelectItem } from "@heroui/react";
 
 export const LocaleSelect = () => {

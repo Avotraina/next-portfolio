@@ -1,6 +1,5 @@
 "use client"
 
-
 import { useScopedI18n } from "@/locales/client";
 import { useEffect, useRef, useState } from "react";
 
@@ -12,7 +11,6 @@ export default function Navigation() {
     const navigation = useScopedI18n("labels.header.navigation");
 
     const menu: MenuItem[] = ["About", "Experience", "Projects", "Contact"];
-    const lowerMenuItem: LowerMenuItem[] = ["about", "experience", "projects", "contact"];
 
     const [activeId, setActiveId] = useState<string | null>(null);
     const observer = useRef<IntersectionObserver | null>(null);

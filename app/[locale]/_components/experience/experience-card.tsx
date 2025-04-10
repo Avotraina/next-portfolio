@@ -1,8 +1,6 @@
 "use client"
 
-import { useCurrentLocale, useI18n } from "@/locales/client";
-import { getScopedI18n } from "@/locales/server";
-import { get } from "http";
+import { useCurrentLocale } from "@/locales/client";
 
 type Children = Readonly<{
   company: string,
@@ -15,16 +13,9 @@ type Children = Readonly<{
 // const ExperienceCard: React.FC<Children> = (props) => {
 function ExperienceCard(props: Children) {
 
-
   const { company, position, description, techs, date } = props;
 
-  // const t = await getScopedI18n(`experience.Ingenosya`);
-
   const i = useCurrentLocale()
-
-  console.log("locale", i)
-
-  // const experience = t.raw("posts.0");
 
   return (
     <li className="group flex flex-col px-4 py-4 gap-0 rounded-sm bg-secondary-50 hover:bg-secondary-200 hover:!opacity-100 group-hover/list:opacity-70 transition duration-300 ease-in-out">

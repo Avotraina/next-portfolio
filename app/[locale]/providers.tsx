@@ -1,6 +1,6 @@
 "use client"
 
-import { Component, PropsWithChildren } from "react";
+import { PropsWithChildren } from "react";
 // import { I18nProvider } from '../../locales';
 import { I18nProviderClient } from "@/locales/client";
 

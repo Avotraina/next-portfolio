@@ -1,11 +1,9 @@
 "use client";
 
 import { useCurrentLocale, useI18n } from "@/locales/client";
-// import { projectsData } from "../../data/projects";
 import {projectsData} from "@/app/[locale]/data/projects/index";
 import SectionTitle from "../shared/section-title";
 import ProjectCard from "./project-card";
-import { getScopedI18n } from "@/locales/server";
 import { useEffect, useState } from "react";
 
 export type Project = Readonly<{
