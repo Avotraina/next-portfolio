@@ -46,6 +46,8 @@ export default async function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${archivo.variable} antialiased leading-relaxed selection:bg-accent-200 mx-auto max-w-screen-2xl`}
       >
         <Providers locale={locale}>
+          <LocaleSelect />
+
           <div className="relative">
             <div className="fixed inset-0 z-30 lg:absolute max-lg:overflow-auto justify-center">
               {/* <div className="fixed inset-0 z-30 lg:absolute"> */}
@@ -53,13 +55,13 @@ export default async function RootLayout({
                 <div className="lg:flex lg:justify-between min-h-screen lg:gap-4">
                   <Header />
                   {children}
-                  <LocaleSelect />
                 </div>
-                
               </div>
             </div>
           </div>
+
         </Providers>
+
       </body>
     </html>
   );

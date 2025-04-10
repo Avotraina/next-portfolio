@@ -3,6 +3,7 @@ import Footer from "./Footer";
 import Navigation from "./Navigation";
 import Link from "next/link";
 import { getI18n, getScopedI18n } from "@/locales/server";
+import { LocaleSelect } from "@/app/hooks/locale-select";
 // import { useEffect, useRef, useState } from "react";
 
 export default async function Header() {

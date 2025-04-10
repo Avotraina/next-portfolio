@@ -1,3 +1,4 @@
+import {heroui} from '@heroui/theme';
 import type { Config } from "tailwindcss";
 
 export default {
@@ -5,6 +6,7 @@ export default {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@heroui/theme/dist/components/(button|dropdown|select|ripple|spinner|menu|divider|popover|form|listbox|scroll-shadow).js"
   ],
   // darkMode: ['selector'],
   theme: {
@@ -24,5 +26,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  // plugins: [heroui()],
 } satisfies Config;
