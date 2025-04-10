@@ -1,0 +1,20 @@
+{
+    "projects": [
+        {
+            "title": "NgxRabeStar",
+            "date": null,
+            "url": "https://www.npmjs.com/package/ngx-rabe-star",
+            "picture": "/images/NgxRabeStar.png",
+            "description": "Une bibliothèque Angular qui fournit un composant de notation par étoiles personnalisable pour les applications Angular. Elle permet aux utilisateurs d'évaluer des éléments à l'aide d'une interface visuelle basée sur des étoiles, ce qui facilite l'implémentation et l'intégration de la fonctionnalité de notation dans les projets Angular.",
+            "techs": ["Angular"]
+        },
+        {
+            "title": "Avotraina Rabe",
+            "date": "",
+            "url": "",
+            "picture": "/images/Avotraina.png",
+            "description": "Mon portfolio.",
+            "techs": ["NextJS", "Tailwind CSS"]
+        }
+    ]
+}

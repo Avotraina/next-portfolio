@@ -1,0 +1,34 @@
+{
+    "header": {
+        "title": "Développeur Web",
+        "hero": {
+            "title": "Développeur Web",
+            "introduction": "Je suis un développeur web passionné, spécialisé dans la création d’applications web modernes, performantes et intuitives."
+        },
+        "navigation": {
+            "about": "À propos",
+            "experience": "Expérience",
+            "projects": "Projets",
+            "contact": "Contact"
+        }
+    },
+    "footer": {
+        "description": "Développé avec NextJS et Tailwind CSS",
+        "privacy_policy": "Politique de confidentialité",
+        "terms_of_service": "Conditions d'utilisation"
+    },
+    "about": {
+        "title": "À propos"
+    },
+    "experience": {
+        "title": "Expérience"
+    },
+    "contact": {
+        "title": "Contact",
+        "description": "N'hésitez pas à me contacter par e-mail pour toute demande ou opportunité de collaboration:",
+        "phone": "Téléphone"
+    },
+    "projects": {
+        "title": "Projets"
+    }
+}

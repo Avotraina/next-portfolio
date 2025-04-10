@@ -1,0 +1,40 @@
+{
+    "sidebar": {
+        "title": "Web developer",
+        "home": "Home",
+        "about": "About",
+        "contact": "Contact"
+    },
+    "footer": {
+        "description": "Developed with NextJS and Tailwind CSS",
+        "privacy_policy": "Privacy Policy",
+        "terms_of_service": "Terms of Service"
+    },
+    "header": {
+        "title": "Web developer",
+        "hero": {
+            "title": "Web developer",
+            "introduction": "I am a Web Developer dedicated to building modern, user-friendly, and high-performance web applications."
+        },
+        "navigation": {
+            "about": "About",
+            "experience": "Experience",
+            "projects": "Projects",
+            "contact": "Contact"
+        }
+    },
+    "about": {
+        "title": "About"
+    },
+    "experience": {
+        "title": "Experience"
+    },
+    "contact": {
+        "title": "Contact",
+        "description": "Feel free to reach out to me via email for any inquiries or collaboration opportunities:",
+        "phone": "Phone"
+    },
+    "projects": {
+        "title": "Projects"
+    }
+}

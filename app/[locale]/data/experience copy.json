@@ -1,0 +1,66 @@
+{
+    "Ingenosya": {
+        "posts": [
+            "Angular developer (Internship)",
+            "Frontend developer"
+        ],
+        "date": "Apr 2021 - May 2022",
+        "description": [
+            {
+                "title": "Frontend development",
+                "description": "As a Frontend Developer , I build and maintain scalable web applications using modern frontend and backend technologies. My role includes developing dynamic user interfaces, integrating secure backend services, and ensuring seamless data flow across the application stack for optimal performance.  // a CHANGER"
+            },
+            {
+                "title": "Database management",
+                "description": ""
+            },
+            {
+                "title": "API development",
+                "description": "I have experience in designing and implementing RESTful APIs using CodeIgniter, ensuring efficient data retrieval and manipulation for web applications. I also have experience in writing SQL queries to automate repetitive tasks, enhancing database performance and reliability. // I develop and integrate RESTful APIs to facilitate seamless communication between frontend applications and backend services. Using Node.js, Express, and MySQL, I ensure efficient data exchange, authentication security, and smooth application workflows. // A changer"
+            },
+            {
+                "title": "Version control",
+                "description": "I have experience in using Git for version control, enabling efficient collaboration and code management within development teams. I am proficient in branching, merging, and resolving conflicts to maintain a clean and organized codebase. // I use Git for version control, enabling efficient collaboration and code management within development teams. I am proficient in branching, merging, and resolving conflicts to maintain a clean and organized codebase."
+            }
+        ],
+        "technologies": [
+            "Angular",
+            "Javascript",
+            "TypeScript",
+            "HTML",
+            "CSS",
+            "SCSS",
+            "Angular Material",
+            "Git",
+            "CodeIgniter",
+            "PostgreSQL"
+        ]
+    },
+
+    "Relia consulting": {
+        "posts": [
+            "Frontend developer",
+            "Fullstack developer",
+            "Lead developer"
+        ],
+        "date": "May 2022 - September 2024",
+        "description": [
+            {
+                "title": "Frontend development",
+                "description": "As a Full Stack Developer at Careertronics, I build and maintain scalable web applications using modern frontend and backend technologies. My role includes developing dynamic user interfaces, integrating secure backend services, and ensuring seamless data flow across the application stack for optimal performance.  // a CHANGER"
+            },
+            {
+                "title": "Database management",
+                "description": ""
+            },
+            {
+                "title": "API development",
+                "description": "I have experience in designing and implementing RESTful APIs using CodeIgniter, ensuring efficient data retrieval and manipulation for web applications. I also have experience in writing SQL queries to automate repetitive tasks, enhancing database performance and reliability. // I develop and integrate RESTful APIs to facilitate seamless communication between frontend applications and backend services. Using Node.js, Express, and MySQL, I ensure efficient data exchange, authentication security, and smooth application workflows. // A changer"
+            },
+            {
+                "title": "Version control",
+                "description": "I have experience in using Git for version control, enabling efficient collaboration and code management within development teams. I am proficient in branching, merging, and resolving conflicts to maintain a clean and organized codebase. // I use Git for version control, enabling efficient collaboration and code management within development teams. I am proficient in branching, merging, and resolving conflicts to maintain a clean and organized codebase."
+            }
+        ]
+    }
+}
