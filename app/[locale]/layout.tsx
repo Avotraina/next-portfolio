@@ -48,6 +48,13 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Avotraina Rabe - Portfolio",
     description: "Avotraina Rabe is a web developer who is dedicated to building modern, user-friendly, and high-performance web applications.",
+  },
+  alternates: {
+    canonical: "https://avotraina-rabe.vercel.app",
+    languages: {
+      "en": "/en",
+      "fr": "/fr",
+    },
   }
 };
 
