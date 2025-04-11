@@ -23,12 +23,32 @@ const archivo = Archivo({
 });
 
 export const metadata: Metadata = {
-  title: "Avotraina Rabe",
+  title: {
+    default: "Avotraina Rabe",
+    template: "%s | Avotraina Rabe",
+  },
   description: "Avotraina Rabe is a web developer with a passion for creating beautiful and functional websites.",
   keywords: ["Avotraina Rabe", "web developer", "portfolio", "Avotraina Rabemananjara", "Malagasy", "Madagascar", "Malagasy developer"],
-  authors: [{ name: 'Avotraina Rabe' }, { name: 'Avotraina Rabemananjara'}],
+  authors: [{ name: 'Avotraina Rabe' }, { name: 'Avotraina Rabemananjara' }],
   creator: "Avotraina Rabe (Avotraina Rabemananjara)",
-
+  openGraph: {
+    title: "Avotraina Rabe",
+    description: "Avotraina Rabe is a web developer who is dedicated to building modern, user-friendly, and high-performance web applications.",
+    url: "https://avotraina-rabe.vercel.app",
+    siteName: "Avotraina Rabe",
+    // images: [
+    //   {
+    //     url: "/images/avotraina-rabe.png",
+    //     width: 800,
+    //     height: 600,
+    //   },
+    // ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Avotraina Rabe - Portfolio",
+    description: "Avotraina Rabe is a web developer who is dedicated to building modern, user-friendly, and high-performance web applications.",
+  }
 };
 
 export default async function RootLayout({
@@ -54,20 +74,18 @@ export default async function RootLayout({
             <LocaleSelect />
           </Suspense>
           <Suspense fallback={<Loading />}>
-          <div className="relative">
-            <div className="fixed inset-0 z-30 lg:absolute max-lg:overflow-auto justify-center">
-              <div className="mx-auto min-h-screen max-w-screen-xl">
-                <div className="lg:flex lg:justify-between min-h-screen lg:gap-4">
-                  <Header />
-                  {children}
+            <div className="relative">
+              <div className="fixed inset-0 z-30 lg:absolute max-lg:overflow-auto justify-center">
+                <div className="mx-auto min-h-screen max-w-screen-xl">
+                  <div className="lg:flex lg:justify-between min-h-screen lg:gap-4">
+                    <Header />
+                    {children}
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
           </Suspense>
-
         </Providers>
-
       </body>
     </html>
   );
