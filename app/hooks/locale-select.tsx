@@ -7,7 +7,7 @@ import { Select, SelectItem } from "@heroui/react";
 export const LocaleSelect = () => {
 
   const locale = useCurrentLocale();
-  const changeLocale = useChangeLocale();
+  const changeLocale = useChangeLocale({preserveSearchParams: true});
 
   return (
     <div className="p-2 right-0 lg:max-h-screen lg:flex-col lg:justify-between max-w-full flex items-end fixed top-0 bg-background z-50">

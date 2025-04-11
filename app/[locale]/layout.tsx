@@ -3,8 +3,9 @@ import { Archivo, Geist, Geist_Mono } from "next/font/google";
 import "@/app/globals.css";
 import Header from "./pannel/Header";
 import { Providers } from "./providers";
-import React from "react";
+import React, { Suspense } from "react";
 import { LocaleSelect } from "../hooks/locale-select";
+import Loading from "./loading";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,6 +25,10 @@ const archivo = Archivo({
 export const metadata: Metadata = {
   title: "Avotraina Rabe",
   description: "Avotraina Rabe is a web developer with a passion for creating beautiful and functional websites.",
+  keywords: ["Avotraina Rabe", "web developer", "portfolio", "Avotraina Rabemananjara", "Malagasy", "Madagascar", "Malagasy developer"],
+  authors: [{ name: 'Avotraina Rabe' }, { name: 'Avotraina Rabemananjara'}],
+  creator: "Avotraina Rabe (Avotraina Rabemananjara)",
+
 };
 
 export default async function RootLayout({
@@ -40,13 +45,15 @@ export default async function RootLayout({
   const { locale } = await params;
 
   return (
-    <html lang="en" className="light scroll-smooth">
+    <html lang={locale} className="light scroll-smooth">
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${archivo.variable} antialiased leading-relaxed selection:bg-accent-200 mx-auto max-w-screen-2xl`}
       >
         <Providers locale={locale}>
-          <LocaleSelect />
-
+          <Suspense>
+            <LocaleSelect />
+          </Suspense>
+          <Suspense fallback={<Loading />}>
           <div className="relative">
             <div className="fixed inset-0 z-30 lg:absolute max-lg:overflow-auto justify-center">
               <div className="mx-auto min-h-screen max-w-screen-xl">
@@ -57,6 +64,7 @@ export default async function RootLayout({
               </div>
             </div>
           </div>
+          </Suspense>
 
         </Providers>
 
