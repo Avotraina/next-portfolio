@@ -10,16 +10,16 @@ const I18nMiddleware = createI18nMiddleware({
  
 export function middleware(request: NextRequest) {
 
-  const { pathname, searchParams } = request.nextUrl
+  // const { pathname, searchParams } = request.nextUrl
 
-  if (
-    pathname.startsWith('/api') ||
-    pathname.startsWith('/_next') ||
-    pathname.includes('.') || // static assets
-    searchParams.has('_rsc') // prevent RSC redirection issues
-  ) {
-    return
-  }
+  // if (
+  //   pathname.startsWith('/api') ||
+  //   pathname.startsWith('/_next') ||
+  //   pathname.includes('.') || // static assets
+  //   searchParams.has('_rsc') // prevent RSC redirection issues
+  // ) {
+  //   return
+  // }
 
   return I18nMiddleware(request)
 }
