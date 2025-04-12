@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: "/",
             disallow: "/private/",
         },
-        sitemap: "https://avotraina-rabe.vercel.app/en/sitemap.xml",
+        sitemap: "https://avotraina-rabe.vercel.app/sitemap.xml",
     }
 }
