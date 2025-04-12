@@ -5,6 +5,7 @@ import { NextRequest, NextResponse } from 'next/server'
 const I18nMiddleware = createI18nMiddleware({
   locales: ['en', 'fr'],
   defaultLocale: 'en',
+  urlMappingStrategy: 'rewrite'
   // urlMappingStrategy: 'rewriteDefault'
 })
  
@@ -31,7 +32,7 @@ export function middleware(request: NextRequest) {
   //   return
   // }
 
-  return I18nMiddleware(request)
+  // return I18nMiddleware(request)
 }
  
 export const config = {
