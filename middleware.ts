@@ -17,10 +17,20 @@ export function middleware(request: NextRequest) {
   // }
 
   const url = request.nextUrl
-
-  if (url.searchParams.has('_rsc') || url.pathname.startsWith('/_next')) {
+  if (
+    url.searchParams.has('_rsc') ||
+    url.pathname.startsWith('/_next') ||
+    url.pathname.startsWith('/api') ||
+    url.pathname.endsWith('.ico') ||
+    url.pathname.endsWith('.xml') ||
+    url.pathname.endsWith('.txt')
+  ) {
     return NextResponse.next()
   }
+
+  // if (url.searchParams.has('_rsc') || url.pathname.startsWith('/_next')) {
+  //   return NextResponse.next()
+  // }
 
   // if (
   //   pathname.startsWith('/api') ||
@@ -36,7 +46,9 @@ export function middleware(request: NextRequest) {
  
 export const config = {
   // matcher: ['/((?!api|static|.*\\..*|_next|favicon.ico|robots.txt).*)']
-  matcher: [
-    '/((?!api|static|.*\\..*|_next|favicon.ico|robots.txt|.*_rsc=).*)'
-  ]
+  // matcher: [
+  //   '/((?!api|static|.*\\..*|_next|favicon.ico|robots.txt|.*_rsc=).*)'
+  // ]
+
+  matcher: ['/((?!_next).*)'],
 }
