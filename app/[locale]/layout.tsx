@@ -112,7 +112,7 @@ const jsonLd: WithContext<FAQPage> = {
     {
       "@type": "Question",
       "name": "Where is Avotraina Rabe from?",
-      "alternateName": "Avotraina Rabemananjara",: 
+      "alternateName": "Avotraina Rabemananjara",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Avotraina Rabe is from Madagascar.",
