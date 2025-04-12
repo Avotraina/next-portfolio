@@ -1,6 +1,6 @@
 // middleware.ts
 import { createI18nMiddleware } from 'next-international/middleware'
-import { NextRequest } from 'next/server'
+import { NextRequest, NextResponse } from 'next/server'
  
 const I18nMiddleware = createI18nMiddleware({
   locales: ['en', 'fr'],
@@ -11,6 +11,10 @@ const I18nMiddleware = createI18nMiddleware({
 export function middleware(request: NextRequest) {
 
   const { pathname, searchParams } = request.nextUrl
+
+  if (request.nextUrl.searchParams.has('_rsc')) {
+    return NextResponse.next(); // ne redirige pas, laisse passer
+  }
 
   if (
     pathname.startsWith('/api') ||
