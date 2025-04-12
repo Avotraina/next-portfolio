@@ -71,7 +71,8 @@ export const metadata: Metadata = {
   },
   verification: {
     // google: "google-site-verification=rVSa1a4lqN4uC1fVpDxV-k17j7iPzKEfmNO9CssCy88"
-    google: "google8f1eaf1df4bb63f5"
+    // google: "google8f1eaf1df4bb63f5.html",
+    google: "33zk1zwv41rYG0GznaAo7j_fdPljz7WsdI4VRkEw-Qo"
   }
 };
 
@@ -87,6 +88,7 @@ export default async function RootLayout({
 }>) {
 
   const { locale } = await params;
+  // <meta name="google-site-verification" content="33zk1zwv41rYG0GznaAo7j_fdPljz7WsdI4VRkEw-Qo" />
 
   return (
     <html lang={locale} className="light scroll-smooth">
