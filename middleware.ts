@@ -16,14 +16,14 @@ export function middleware(request: NextRequest) {
     return NextResponse.next(); // ne redirige pas, laisse passer
   }
 
-  if (
-    pathname.startsWith('/api') ||
-    pathname.startsWith('/_next') ||
-    pathname.includes('.') || // static assets
-    searchParams.has('_rsc') // prevent RSC redirection issues
-  ) {
-    return
-  }
+  // if (
+  //   pathname.startsWith('/api') ||
+  //   pathname.startsWith('/_next') ||
+  //   pathname.includes('.') || // static assets
+  //   searchParams.has('_rsc') // prevent RSC redirection issues
+  // ) {
+  //   return
+  // }
 
   return I18nMiddleware(request)
 }
