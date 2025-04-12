@@ -6,6 +6,7 @@ import { Providers } from "./providers";
 import React, { Suspense } from "react";
 import { LocaleSelect } from "../hooks/locale-select";
 import Loading from "./loading";
+import { FAQPage, WithContext } from "schema-dts";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -82,12 +83,30 @@ export const metadata: Metadata = {
   // }
 };
 
-const jsonLd = {
+const jsonLd: WithContext<FAQPage> = {
   "@context": "https://schema.org",
-  "@type": "WebSite",
-  name: "Avotraina Rabe",
-  url: "https://avotraina-rabe.vercel.app",
-  description: "Avotraina Rabe is a web developer who is dedicated to building modern, user-friendly, and high-performance web applications.",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Who is Avotraina Rabe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Avotraina Rabe is a web developer who is dedicated to building modern, user-friendly, and high-performance web applications.",
+      },
+    },
+    {
+      "@type": "Question",
+      "name": "What does Avotraina Rabe do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Avotraina Rabe specializes in creating beautiful and functional websites.",
+      },
+    },
+  ],
+  // name: "Avotraina Rabe",
+  // url: "https://avotraina-rabe.vercel.app",
+  // description: "Avotraina Rabe is a web developer who is dedicated to building modern, user-friendly, and high-performance web applications.",
 }
 
 export default async function RootLayout({
