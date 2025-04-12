@@ -17,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
                     en: "https://avotraina-rabe.vercel.app",
                     fr: "https://avotraina-rabe.vercel.app/fr",
                 }
-            }
+            },
         },
         // {
         //     url: "https://avotraina-rabe.vercel.app/projects",
