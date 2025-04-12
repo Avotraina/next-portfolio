@@ -22,6 +22,11 @@ const archivo = Archivo({
   subsets: ["latin"],
 });
 
+// lib/config.ts
+export const supportedLocales = ['en', 'fr']
+export const defaultLocale = 'en'
+export const baseUrl = 'ttps://avotraina-rabe.vercel.app'
+
 export const metadata: Metadata = {
   title: {
     default: "Avotraina Rabe",
@@ -49,13 +54,20 @@ export const metadata: Metadata = {
     title: "Avotraina Rabe - Portfolio",
     description: "Avotraina Rabe is a web developer who is dedicated to building modern, user-friendly, and high-performance web applications.",
   },
+  // alternates: {
+  //   canonical: "https://avotraina-rabe.vercel.app",
+  //   languages: {
+  //     "en": "/en",
+  //     "fr": "/fr",
+  //   },
+  // }
   alternates: {
-    canonical: "https://avotraina-rabe.vercel.app",
-    languages: {
-      "en": "/en",
-      "fr": "/fr",
-    },
-  }
+    canonical: `${baseUrl}/en`, // or dynamically set the default
+    languages: supportedLocales.reduce((acc, locale) => {
+      acc[locale] = `${baseUrl}/${locale}`
+      return acc
+    }, {} as Record<string, string>),
+  },
 };
 
 export default async function RootLayout({
