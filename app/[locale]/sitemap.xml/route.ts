@@ -1,5 +1,4 @@
 // app/[locale]/sitemap.xml/route.ts
-import { type NextRequest } from 'next/server'
 
 export const dynamic = 'force-static' // optional for caching
 
