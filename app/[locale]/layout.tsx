@@ -41,6 +41,7 @@ export const metadata: Metadata = {
     description: "Avotraina Rabe is a web developer who is dedicated to building modern, user-friendly, and high-performance web applications.",
     url: "https://avotraina-rabe.vercel.app",
     siteName: "Avotraina Rabe",
+    type: "website"
     // images: [
     //   {
     //     url: "/images/avotraina-rabe.png",
@@ -68,6 +69,9 @@ export const metadata: Metadata = {
       return acc
     }, {} as Record<string, string>),
   },
+  verification: {
+    google: "google-site-verification=rVSa1a4lqN4uC1fVpDxV-k17j7iPzKEfmNO9CssCy88"
+  }
 };
 
 export default async function RootLayout({
