@@ -14,7 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 1,
             alternates: {
                 languages: {
-                    en: "https://avotraina-rabe.vercel.app",
+                    en: "https://avotraina-rabe.vercel.app/en",
                     fr: "https://avotraina-rabe.vercel.app/fr",
                 }
             },
