@@ -70,7 +70,8 @@ export const metadata: Metadata = {
     }, {} as Record<string, string>),
   },
   verification: {
-    google: "google-site-verification=rVSa1a4lqN4uC1fVpDxV-k17j7iPzKEfmNO9CssCy88"
+    // google: "google-site-verification=rVSa1a4lqN4uC1fVpDxV-k17j7iPzKEfmNO9CssCy88"
+    google: "google-site-verification: google8f1eaf1df4bb63f5"
   }
 };
 
