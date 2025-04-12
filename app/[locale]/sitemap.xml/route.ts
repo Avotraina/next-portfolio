@@ -3,7 +3,7 @@ import { type NextRequest } from 'next/server'
 
 export const dynamic = 'force-static' // optional for caching
 
-export async function GET(req: NextRequest) {
+export async function GET() {
   const baseUrl = 'https://avotraina-rabe.vercel.app'
 
   const locales = ['en', 'fr'] // tes langues supportées
