@@ -1,5 +1,5 @@
 import { getScopedI18n } from "@/locales/server";
-import About from "./_components/about/About";
+// import About from "./_components/about/About";
 // import Contact from "./_components/contact/contact";
 // import Experience from "./_components/experience/experience";
 // import Projects from "./_components/projects/projects";
