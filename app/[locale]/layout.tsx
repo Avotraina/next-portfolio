@@ -76,8 +76,19 @@ export const metadata: Metadata = {
     // google: "rVSa1a4lqN4uC1fVpDxV-k17j7iPzKEfmNO9Cs"
     // google: "rVSa1a4lqN4uC1fVpDxV-k17j7iPzKEfmNO9CssCy88"
     google: "google8f1eaf1df4bb63f5",
-  }
+  },
+  // other: {
+    
+  // }
 };
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Avotraina Rabe",
+  url: "https://avotraina-rabe.vercel.app",
+  description: "Avotraina Rabe is a web developer who is dedicated to building modern, user-friendly, and high-performance web applications.",
+}
 
 export default async function RootLayout({
   children,
@@ -95,6 +106,10 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} className="light scroll-smooth">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${archivo.variable} antialiased leading-relaxed selection:bg-accent-200 mx-auto max-w-screen-2xl`}
       >
