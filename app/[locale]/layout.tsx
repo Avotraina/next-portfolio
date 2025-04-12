@@ -95,6 +95,7 @@ const jsonLd: WithContext<FAQPage> = {
     {
       "@type": "Question",
       "name": "Who is Avotraina Rabe?",
+      alternateName: "Avotraina Rabemananjara",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Avotraina Rabe is a web developer who is dedicated to building modern, user-friendly, and high-performance web applications.",
@@ -108,6 +109,39 @@ const jsonLd: WithContext<FAQPage> = {
         "text": "Avotraina Rabe specializes in creating beautiful and functional websites.",
       },
     },
+    {
+      "@type": "Question",
+      "name": "Where is Avotraina Rabe from?",
+      "alternateName": "Avotraina Rabemananjara",: 
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Avotraina Rabe is from Madagascar.",
+      },
+    },
+    {
+      "@type": "Question",
+      "name": "What is Avotraina Rabe's mission?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Avotraina Rabe's mission is to create modern, user-friendly, and high-performance web applications.",
+      },
+    },
+    {
+      "@type": "Person",
+      "name": "Avotraina Rabe",
+      "alternateName": "Avotraina Rabemananjara",
+      "url": "https://avotraina-rabe.vercel.app",
+      "image": "https://avotraina-rabe.vercel.app/images/avotraina-rabe.png",
+      "sameAs": [
+        "https://www.linkedin.com/in/avotraina-rabemananjara-44b6571b6/",
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "Madagascar",
+        "availableLanguage": "English, French, Malagasy",
+        "addressRegion": "Antananarivo",
+      }
+    }
   ],
   // name: "Avotraina Rabe",
   // url: "https://avotraina-rabe.vercel.app",
