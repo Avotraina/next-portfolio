@@ -10,10 +10,16 @@ const I18nMiddleware = createI18nMiddleware({
  
 export function middleware(request: NextRequest) {
 
-  const { pathname, searchParams } = request.nextUrl
+  // const { pathname, searchParams } = request.nextUrl
 
-  if (request.nextUrl.searchParams.has('_rsc')) {
-    return NextResponse.next(); // ne redirige pas, laisse passer
+  // if (request.nextUrl.searchParams.has('_rsc')) {
+  //   return NextResponse.next(); // ne redirige pas, laisse passer
+  // }
+
+  const url = request.nextUrl
+
+  if (url.searchParams.has('_rsc') || url.pathname.startsWith('/_next')) {
+    return NextResponse.next()
   }
 
   // if (
