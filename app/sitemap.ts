@@ -8,7 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         //     lastModified: new Date(),
         // },
         {
-            url: "https://avotraina-rabe.vercel.app/en",
+            url: "https://avotraina-rabe.vercel.app",
             lastModified: new Date(),
             changeFrequency: 'monthly',
             priority: 1,
