@@ -16,17 +16,7 @@ export function middleware(request: NextRequest) {
   //   return NextResponse.next(); // ne redirige pas, laisse passer
   // }
 
-  const url = request.nextUrl
-  if (
-    url.searchParams.has('_rsc') ||
-    url.pathname.startsWith('/_next') ||
-    url.pathname.startsWith('/api') ||
-    url.pathname.endsWith('.ico') ||
-    url.pathname.endsWith('.xml') ||
-    url.pathname.endsWith('.txt')
-  ) {
-    return NextResponse.next()
-  }
+  // const url = request.nextUrl
 
   // if (url.searchParams.has('_rsc') || url.pathname.startsWith('/_next')) {
   //   return NextResponse.next()
