@@ -11,6 +11,22 @@ const I18nMiddleware = createI18nMiddleware({
  
 export function middleware(request: NextRequest) {
 
+  const { pathname, searchParams } = request.nextUrl
+
+  // Skip all Next internals + _rsc
+  if (
+    pathname.startsWith('/_next') ||
+    pathname.startsWith('/api') ||
+    pathname.endsWith('.ico') ||
+    pathname.endsWith('.xml') ||
+    pathname.endsWith('.txt') ||
+    searchParams.has('_rsc')
+  ) {
+    return NextResponse.next()
+  }
+
+  return I18nMiddleware(request)
+
   // const { pathname, searchParams } = request.nextUrl
 
   // if (request.nextUrl.searchParams.has('_rsc')) {
@@ -36,10 +52,11 @@ export function middleware(request: NextRequest) {
 }
  
 export const config = {
-  matcher: ['/((?!api|static|.*\\..*|_next|favicon.ico|robots.txt).*)']
+  // matcher: ['/((?!api|static|.*\\..*|_next|favicon.ico|robots.txt).*)']
   // matcher: [
   //   '/((?!api|static|.*\\..*|_next|favicon.ico|robots.txt|.*_rsc=).*)'
   // ]
 
   // matcher: ['/((?!_next).*)'],
+  matcher: ['/((?!_next|api|.*\\..*|_rsc=).*)'], // matcher updated
 }
