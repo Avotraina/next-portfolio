@@ -7,6 +7,7 @@ import React, { Suspense } from "react";
 import { LocaleSelect } from "../hooks/locale-select";
 import Loading from "./loading";
 import { FAQPage, WithContext } from "schema-dts";
+import Head from 'next/head'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -79,7 +80,7 @@ export const metadata: Metadata = {
     google: "google8f1eaf1df4bb63f5",
   },
   // other: {
-    
+
   // }
 };
 
@@ -125,10 +126,16 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} className="light scroll-smooth">
-      <script
+      {/* <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      /> */}
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${archivo.variable} antialiased leading-relaxed selection:bg-accent-200 mx-auto max-w-screen-2xl`}
       >
