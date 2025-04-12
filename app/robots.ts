@@ -5,8 +5,8 @@ export default function robots(): MetadataRoute.Robots {
         rules: {
             userAgent: "*",
             allow: "/",
-            disallow: "/private/",
+            disallow: "/_next/",
         },
-        sitemap: "https://avotraina-rabe.vercel.app/en/sitemap.xml",
+        sitemap: "https://avotraina-rabe.vercel.app/sitemap.xml",
     }
 }
