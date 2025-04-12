@@ -24,7 +24,7 @@ const archivo = Archivo({
 
 // lib/config.ts
 const supportedLocales = ['en', 'fr']
-const defaultLocale = 'en'
+// const defaultLocale = 'en'
 const baseUrl = 'ttps://avotraina-rabe.vercel.app'
 
 export const metadata: Metadata = {
