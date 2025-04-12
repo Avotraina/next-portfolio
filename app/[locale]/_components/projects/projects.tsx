@@ -25,7 +25,7 @@ export default function Projects() {
     useEffect(() => {
         const projects = projectsData[locale].projects;
         setProjects(projects);
-        console.log("PROJECTS", projects);
+        // console.log("PROJECTS", projects);
     }, []);
 
     return (
