@@ -11,7 +11,7 @@ export default async function Home() {
     return (
         // <div className="">
         <main className="flex flex-col flex-1 py-24 pt-24 lg:w-[52%] lg:py-24 gap-4 max-w-screen-md">
-            <About />
+            {/* <About /> */}
             {/* <Experience />
             <Projects />
             <Contact /> */}
