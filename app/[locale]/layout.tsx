@@ -79,6 +79,10 @@ export const metadata: Metadata = {
     // google: "rVSa1a4lqN4uC1fVpDxV-k17j7iPzKEfmNO9CssCy88"
     google: "google8f1eaf1df4bb63f5",
   },
+  robots: {
+    index: true,
+    follow: true,
+  }
   // other: {
 
   // }
