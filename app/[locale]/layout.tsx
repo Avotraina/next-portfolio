@@ -197,6 +197,7 @@ export default async function RootLayout({
         <link rel="alternate" href="https://avotraina-rabe.vercel.app/en" hrefLang="en" />
         <link rel="alternate" href="https://avotraina-rabe.vercel.app/fr" hrefLang="fr" />
         <link rel="alternate" href="https://avotraina-rabe.vercel.app" hrefLang="x-default" />
+        <meta name="image" content="https://avotraina-rabe.vercel.app/og.png" />
       </Head>
       <script
         type="application/ld+json"
