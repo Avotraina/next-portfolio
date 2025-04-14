@@ -151,6 +151,12 @@ const jsonLd: WithContext<FAQPage> = {
     // },
 
   ],
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": `${baseUrl}/search?q={search_term_string}`,
+    "query": "{search_term_string}",
+    // "query-input": "required name=search_term_string",
+  }
   // name: "Avotraina Rabe",
   // url: "https://avotraina-rabe.vercel.app",
   // description: "Avotraina Rabe is a web developer who is dedicated to building modern, user-friendly, and high-performance web applications.",
