@@ -43,14 +43,16 @@ export const metadata: Metadata = {
     description: "Avotraina Rabe is a web developer who is dedicated to building modern, user-friendly, and high-performance web applications.",
     url: "https://avotraina-rabe.vercel.app",
     siteName: "Avotraina Rabe",
-    type: "website"
-    // images: [
-    //   {
-    //     url: "/images/avotraina-rabe.png",
-    //     width: 800,
-    //     height: 600,
-    //   },
-    // ],
+    type: "website",
+    images: [
+      {
+        url: "https://avotraina-rabe.vercel.app/og.png", 
+        alt: "https://avotraina-rabe.vercel.app/og.png",
+        // url: "/images/avotraina-rabe.png",
+        // width: 800,
+        // height: 600,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
