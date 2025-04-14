@@ -127,28 +127,28 @@ const jsonLd: WithContext<FAQPage> = {
         "text": "Avotraina Rabe's mission is to create modern, user-friendly, and high-performance web applications.",
       },
     },
-    {
-      "@type": "Person",
-      "name": "Avotraina Rabe",
-      "alternateName": "Avotraina Rabemananjara",
-      "url": "https://avotraina-rabe.vercel.app",
-      // "image": "https://avotraina-rabe.vercel.app/images/avotraina-rabe.png",
-      "sameAs": [
-        "https://www.linkedin.com/in/avotraina-rabemananjara-44b6571b6/",
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "Madagascar",
-        "availableLanguage": "English, French, Malagasy",
-        "addressRegion": "Antananarivo",
-      }
-    },
-    {
-      "@type": "ListItem",
-      "name": "Avotraina Rabe",
-      "url": "https://avotraina-rabe.vercel.app/",
-      "item": "https://avotraina-rabe.vercel.app/",
-    },
+    // {
+    //   "@type": "Person",
+    //   "name": "Avotraina Rabe",
+    //   "alternateName": "Avotraina Rabemananjara",
+    //   "url": "https://avotraina-rabe.vercel.app",
+    //   // "image": "https://avotraina-rabe.vercel.app/images/avotraina-rabe.png",
+    //   "sameAs": [
+    //     "https://www.linkedin.com/in/avotraina-rabemananjara-44b6571b6/",
+    //   ],
+    //   "address": {
+    //     "@type": "PostalAddress",
+    //     "addressCountry": "Madagascar",
+    //     "availableLanguage": "English, French, Malagasy",
+    //     "addressRegion": "Antananarivo",
+    //   }
+    // },
+    // {
+    //   "@type": "ListItem",
+    //   "name": "Avotraina Rabe",
+    //   "url": "https://avotraina-rabe.vercel.app/",
+    //   "item": "https://avotraina-rabe.vercel.app/",
+    // },
 
   ],
   // name: "Avotraina Rabe",
