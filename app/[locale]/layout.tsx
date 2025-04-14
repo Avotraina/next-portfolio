@@ -193,14 +193,14 @@ export default async function RootLayout({
           href="https://avotraina-rabe.vercel.app/fr" // 👈 Change this per locale/page
         />
         <link rel="alternate" href="https://avotraina-rabe.vercel.app/en" hrefLang="en" />
-      <link rel="alternate" href="https://avotraina-rabe.vercel.app/fr" hrefLang="fr" />
-      <link rel="alternate" href="https://avotraina-rabe.vercel.app" hrefLang="x-default" />
+        <link rel="alternate" href="https://avotraina-rabe.vercel.app/fr" hrefLang="fr" />
+        <link rel="alternate" href="https://avotraina-rabe.vercel.app" hrefLang="x-default" />
       </Head>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      
+
       {/* </Head> */}
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${archivo.variable} antialiased leading-relaxed selection:bg-accent-200 mx-auto max-w-screen-2xl`}
