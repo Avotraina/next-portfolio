@@ -95,7 +95,7 @@ const jsonLd: WithContext<FAQPage> = {
     {
       "@type": "Question",
       "name": "Who is Avotraina Rabe?",
-      alternateName: "Who is Avotraina Rabemananjara",
+      alternateName: "Avotraina Rabemananjara",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Avotraina Rabe is a web developer who is dedicated to building modern, user-friendly, and high-performance web applications.",
@@ -104,7 +104,7 @@ const jsonLd: WithContext<FAQPage> = {
     {
       "@type": "Question",
       "name": "What does Avotraina Rabe do?",
-      "alternateName": "What does Avotraina Rabemananjara do?",
+      "alternateName": "Avotraina Rabemananjara",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Avotraina Rabe specializes in building modern, user-friendly, and high-performance web applications.",
@@ -113,7 +113,7 @@ const jsonLd: WithContext<FAQPage> = {
     {
       "@type": "Question",
       "name": "Where is Avotraina Rabe from?",
-      "alternateName": "Where is Avotraina Rabemananjara",
+      "alternateName": "Avotraina Rabemananjara",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Avotraina Rabe is from Madagascar.",
