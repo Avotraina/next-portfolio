@@ -34,12 +34,12 @@ export const metadata: Metadata = {
     default: "Avotraina Rabe",
     template: "%s | Avotraina Rabe",
   },
-  description: "Avotraina Rabe is a web developer with a passion for creating beautiful and functional websites.",
-  keywords: ["Avotraina Rabe", "web developer", "portfolio", "Avotraina Rabemananjara", "Malagasy", "Madagascar", "Malagasy developer"],
+  description: "Avotraina Rabe (Avotraina Rabemananjara) is a web developer with a passion for building modern, user-friendly, and high-performance web applications.",
+  keywords: ["Avotraina Rabe", "web developer", "portfolio", "Avotraina Rabemananjara", "Malagasy", "Madagascar", "Malagasy developer", "Madagascar developer", "web development", "software engineer", "full-stack developer", "frontend developer", "backend developer", "Antananarivo", "Développeur web", "Développeur full-stack", "Développeur frontend", "Développeur backend", "Développeur logiciel", "Ingénieur logiciel", "Ingénieur en développement logiciel", "Ingénieur en développement web", "Ingénieur en développement d'applications", "Angular", "React", "Next.js", "Node.js", "Express.js", "MongoDB", "PostgreSQL", "MySQL", "Tailwind CSS", "CSS", "HTML", "JavaScript", "TypeScript", "Développement Backend", "Développement Frontend", "Développement Fullstack", "Développement Web", "Développement d'applications", "Développement de logiciels", "Ingénierie logicielle", "Ingénierie en développement logiciel", "Ingénierie en développement web", "Ingénierie en développement d'applications", "Ingénierie en développement de logiciels"],
   authors: [{ name: 'Avotraina Rabe' }, { name: 'Avotraina Rabemananjara' }],
   creator: "Avotraina Rabe (Avotraina Rabemananjara)",
   openGraph: {
-    title: "Avotraina Rabe",
+    title: "Avotraina Rabe | Avotraina Rabemananjara",
     description: "Avotraina Rabe is a web developer who is dedicated to building modern, user-friendly, and high-performance web applications.",
     url: "https://avotraina-rabe.vercel.app",
     siteName: "Avotraina Rabe",
@@ -95,7 +95,7 @@ const jsonLd: WithContext<FAQPage> = {
     {
       "@type": "Question",
       "name": "Who is Avotraina Rabe?",
-      alternateName: "Avotraina Rabemananjara",
+      alternateName: "Who is Avotraina Rabemananjara",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Avotraina Rabe is a web developer who is dedicated to building modern, user-friendly, and high-performance web applications.",
@@ -104,15 +104,16 @@ const jsonLd: WithContext<FAQPage> = {
     {
       "@type": "Question",
       "name": "What does Avotraina Rabe do?",
+      "alternateName": "What does Avotraina Rabemananjara do?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Avotraina Rabe specializes in creating beautiful and functional websites.",
+        "text": "Avotraina Rabe specializes in building modern, user-friendly, and high-performance web applications.",
       },
     },
     {
       "@type": "Question",
       "name": "Where is Avotraina Rabe from?",
-      "alternateName": "Avotraina Rabemananjara",
+      "alternateName": "Where is Avotraina Rabemananjara",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Avotraina Rabe is from Madagascar.",
@@ -131,7 +132,7 @@ const jsonLd: WithContext<FAQPage> = {
       "name": "Avotraina Rabe",
       "alternateName": "Avotraina Rabemananjara",
       "url": "https://avotraina-rabe.vercel.app",
-      "image": "https://avotraina-rabe.vercel.app/images/avotraina-rabe.png",
+      // "image": "https://avotraina-rabe.vercel.app/images/avotraina-rabe.png",
       "sameAs": [
         "https://www.linkedin.com/in/avotraina-rabemananjara-44b6571b6/",
       ],
@@ -141,7 +142,14 @@ const jsonLd: WithContext<FAQPage> = {
         "availableLanguage": "English, French, Malagasy",
         "addressRegion": "Antananarivo",
       }
-    }
+    },
+    {
+      "@type": "ListItem",
+      "name": "Avotraina Rabe",
+      "url": "https://avotraina-rabe.vercel.app/",
+      "item": "https://avotraina-rabe.vercel.app/",
+    },
+    
   ],
   // name: "Avotraina Rabe",
   // url: "https://avotraina-rabe.vercel.app",
