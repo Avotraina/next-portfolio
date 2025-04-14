@@ -7,7 +7,7 @@ import React, { Suspense } from "react";
 import { LocaleSelect } from "../hooks/locale-select";
 import Loading from "./loading";
 import { FAQPage, WithContext } from "schema-dts";
-// import Head from 'next/head'
+import Head from 'next/head'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -177,13 +177,24 @@ export default async function RootLayout({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       /> */}
       {/* <Head> */}
+      <Head>
+        <link
+          rel="canonical"
+          href="https://avotraina-rabe.vercel.app/en" // 👈 Change this per locale/page
+        />
+        <link
+          rel="canonical"
+          href="https://avotraina-rabe.vercel.app/fr" // 👈 Change this per locale/page
+        />
+        <link rel="alternate" href="https://avotraina-rabe.vercel.app/en" hrefLang="en" />
+      <link rel="alternate" href="https://avotraina-rabe.vercel.app/fr" hrefLang="fr" />
+      <link rel="alternate" href="https://avotraina-rabe.vercel.app" hrefLang="x-default" />
+      </Head>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <link rel="alternate" href="https://avotraina-rabe.vercel.app/en" hrefLang="en" />
-      <link rel="alternate" href="https://avotraina-rabe.vercel.app/fr" hrefLang="fr" />
-      <link rel="alternate" href="https://avotraina-rabe.vercel.app" hrefLang="x-default" />
+      
       {/* </Head> */}
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${archivo.variable} antialiased leading-relaxed selection:bg-accent-200 mx-auto max-w-screen-2xl`}
