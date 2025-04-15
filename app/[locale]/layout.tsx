@@ -100,7 +100,7 @@ const jsonLd: WithContext<FAQPage> = {
       alternateName: "Avotraina Rabemananjara",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Avotraina Rabe is a web developer who is dedicated to building modern, user-friendly, and high-performance web applications.",
+        "text": "Avotraina Rabe is a fullstack developer who is dedicated to building modern, user-friendly, and high-performance web applications.",
       },
     },
     {
