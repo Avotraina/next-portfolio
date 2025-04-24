@@ -34,13 +34,13 @@ export const metadata: Metadata = {
     default: "Avotraina Rabe",
     template: "%s | Avotraina Rabe",
   },
-  description: "Avotraina Rabe (Avotraina Rabemananjara) is a web developer with a passion for building modern, user-friendly, and high-performance web applications.",
+  description: "Avotraina Rabe (Avotraina Rabemananjara) is a fullstak developer with a passion for building modern, user-friendly, and high-performance web applications.",
   keywords: ["Avotraina Rabe", "web developer", "portfolio", "Avotraina Rabemananjara", "Malagasy", "Madagascar", "Malagasy developer", "Madagascar developer", "web development", "software engineer", "full-stack developer", "frontend developer", "backend developer", "Antananarivo", "Développeur web", "Développeur full-stack", "Développeur frontend", "Développeur backend", "Développeur logiciel", "Ingénieur logiciel", "Ingénieur en développement logiciel", "Ingénieur en développement web", "Ingénieur en développement d'applications", "Angular", "React", "Next.js", "Node.js", "Express.js", "MongoDB", "PostgreSQL", "MySQL", "Tailwind CSS", "CSS", "HTML", "JavaScript", "TypeScript", "Développement Backend", "Développement Frontend", "Développement Fullstack", "Développement Web", "Développement d'applications", "Développement de logiciels", "Ingénierie logicielle", "Ingénierie en développement logiciel", "Ingénierie en développement web", "Ingénierie en développement d'applications", "Ingénierie en développement de logiciels"],
   authors: [{ name: 'Avotraina Rabe' }, { name: 'Avotraina Rabemananjara' }],
   creator: "Avotraina Rabe (Avotraina Rabemananjara)",
   openGraph: {
     title: "Avotraina Rabe | Avotraina Rabemananjara",
-    description: "Avotraina Rabe is a web developer who is dedicated to building modern, user-friendly, and high-performance web applications.",
+    description: "Avotraina Rabe is a fullstack developer who is dedicated to building modern, user-friendly, and high-performance web applications.",
     url: "https://avotraina-rabe.vercel.app",
     siteName: "Avotraina Rabe",
     type: "website",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Avotraina Rabe - Portfolio",
-    description: "Avotraina Rabe is a web developer who is dedicated to building modern, user-friendly, and high-performance web applications.",
+    description: "Avotraina Rabe is a fullstack developer who is dedicated to building modern, user-friendly, and high-performance web applications.",
   },
   // alternates: {
   //   canonical: "https://avotraina-rabe.vercel.app",
@@ -180,11 +180,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} className="light scroll-smooth">
-      {/* <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      /> */}
-      {/* <Head> */}
+      
       <Head>
         <link
           rel="canonical"
@@ -198,12 +194,12 @@ export default async function RootLayout({
         <link rel="alternate" href="https://avotraina-rabe.vercel.app/fr" hrefLang="fr" />
         <link rel="alternate" href="https://avotraina-rabe.vercel.app" hrefLang="x-default" />
         <meta name="image" content="https://avotraina-rabe.vercel.app/og.png" />
-      </Head>
-      <script
+        <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} async
       />
-
+      </Head>
+      
       {/* </Head> */}
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${archivo.variable} antialiased leading-relaxed selection:bg-accent-200 mx-auto max-w-screen-2xl`}

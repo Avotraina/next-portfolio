@@ -1,4 +1,25 @@
 {
+
+    "Ultima media": {
+        "posts": [
+            "Desktop developer (Internship)"
+        ],
+        "date": "September 2024 - Present",
+        "description": [
+            {
+                "title": "Desktop development",
+                "description": "Developed a desktop application for managing the company’s IT asset inventory, including equipment tracking, maintenance scheduling, and assignment management."
+            },
+            {
+                "title": "Database management",
+                "description": "Designed and managed HFSQL database"
+            }
+        ],
+        "technologies": [
+            "WINDEV",
+            "HFSQL"
+        ]
+    },
     "Ingenosya": {
         "posts": [
             "Frontend developer",

@@ -3,6 +3,7 @@ import About from "./_components/about/About";
 import Contact from "./_components/contact/contact";
 import Experience from "./_components/experience/experience";
 import Projects from "./_components/projects/projects";
+import Formations from "./_components/formations/formations";
 
 export default async function Home() {
 
@@ -14,6 +15,7 @@ export default async function Home() {
             <About />
             <Experience />
             <Projects />
+            <Formations />
             <Contact />
             <div className="border-t pt-4 mt-4 px-4 block lg:hidden">
                 <span className="text-xs">

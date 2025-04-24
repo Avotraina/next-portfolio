@@ -3,14 +3,14 @@
 import { useScopedI18n } from "@/locales/client";
 import { useEffect, useRef, useState } from "react";
 
-type MenuItem = "About" | "Experience" | "Projects" | "Contact";
-type LowerMenuItem = "about" | "experience" | "projects" | "contact";
+type MenuItem = "About" | "Experience" | "Projects" | "Education" | "Contact";
+type LowerMenuItem = "about" | "experience" | "projects" | "education" | "contact";
 
 export default function Navigation() {
 
     const navigation = useScopedI18n("labels.header.navigation");
 
-    const menu: MenuItem[] = ["About", "Experience", "Projects", "Contact"];
+    const menu: MenuItem[] = ["About", "Experience", "Projects", "Education", "Contact"];
 
     const [activeId, setActiveId] = useState<string | null>(null);
     const observer = useRef<IntersectionObserver | null>(null);

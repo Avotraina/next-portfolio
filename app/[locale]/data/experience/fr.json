@@ -1,4 +1,25 @@
 {
+
+    "Ultima media": {
+        "posts": [
+            "Développeur desktop (Stage)"
+        ],
+        "date": "Septembre 2024 - Présent",
+        "description": [
+            {
+                "title": "Développement desktop",
+                "description": "Développement d’un logiciel desktop pour la gestion du parc informatique de l’entreprise (inventaire du matériel, suivi des maintenances, gestion des affectations)."
+            },
+            {
+                "title": "Gestion de base de données",
+                "description": "Conception et gestion de la base de données HFSQL."
+            }
+        ],
+        "technologies": [
+            "WINDEV",
+            "HFSQL"
+        ]
+    },
     "Ingenosya": {
         "posts": [
             "Développeur Frontend",
