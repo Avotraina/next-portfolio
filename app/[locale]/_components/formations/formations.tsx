@@ -24,7 +24,7 @@ export default function Formations() {
     }, []);
 
     return (
-        <section id="formations" className="flex flex-col px-4 py-4 gap-4 scroll-mt-16 lg:scroll-mt-24">
+        <section id="education" className="flex flex-col px-4 py-4 gap-4 scroll-mt-16 lg:scroll-mt-24">
 
             <SectionTitle title="Education" />
 
