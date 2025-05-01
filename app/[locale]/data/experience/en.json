@@ -58,13 +58,13 @@
     "Relia consulting": {
         "posts": [
             "Lead developer",
-            "Fullstack developer",
+            "Full-Stack developer",
             "Frontend developer"
         ],
         "date": "May 2022 - September 2024",
         "description": [
             {
-                "title": "Fullstack development",
+                "title": "Full-Stack development",
                 "description": "Collaborated with cross-functional teams to develop and maintain client projects,specifically on both web and mobile applications. My role includes building dynamic user interfaces on the frontend and develop secure, scalable backend services to support application logic, data management, and API integrations."
             },
             {

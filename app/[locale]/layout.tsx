@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   creator: "Avotraina Rabe (Avotraina Rabemananjara)",
   openGraph: {
     title: "Avotraina Rabe | Avotraina Rabemananjara",
-    description: "Avotraina Rabe is a fullstack developer who is dedicated to building modern, user-friendly, and high-performance web applications.",
+    description: "Avotraina Rabe is a Full-Stack developer who is dedicated to building modern, user-friendly, and high-performance web applications.",
     url: "https://avotraina-rabe.vercel.app",
     siteName: "Avotraina Rabe",
     type: "website",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Avotraina Rabe - Portfolio",
-    description: "Avotraina Rabe is a fullstack developer who is dedicated to building modern, user-friendly, and high-performance web applications.",
+    description: "Avotraina Rabe is a Full-Stack developer who is dedicated to building modern, user-friendly, and high-performance web applications.",
   },
   // alternates: {
   //   canonical: "https://avotraina-rabe.vercel.app",
@@ -100,7 +100,7 @@ const jsonLd: WithContext<FAQPage> = {
       alternateName: "Avotraina Rabemananjara",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Avotraina Rabe is a fullstack developer who is dedicated to building modern, user-friendly, and high-performance web applications.",
+        "text": "Avotraina Rabe is a Full-Stack developer who is dedicated to building modern, user-friendly, and high-performance web applications.",
       },
     },
     {

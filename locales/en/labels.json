@@ -1,6 +1,6 @@
 {
     "sidebar": {
-        "title": "Fullstack developer",
+        "title": "Full-Stack developer",
         "home": "Home",
         "about": "About",
         "contact": "Contact"
@@ -11,10 +11,10 @@
         "terms_of_service": "Terms of Service"
     },
     "header": {
-        "title": "Fullstack developer",
+        "title": "Full-Stack developer",
         "hero": {
-            "title": "Fullstack developer",
-            "introduction": "I am a Fullstack developer dedicated to building modern, user-friendly, and high-performance web applications."
+            "title": "Full-Stack developer",
+            "introduction": "I am a Full-Stack developer dedicated to building modern, user-friendly, and high-performance web applications."
         },
         "navigation": {
             "about": "About",
