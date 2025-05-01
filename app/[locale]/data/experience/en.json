@@ -22,18 +22,18 @@
     },
     "Ingenosya": {
         "posts": [
-            "Frontend developer",
+            "Front-end developer",
             "Angular developer (Internship)"
         ],
         "date": "April 2021 - May 2022",
         "description": [
             {
-                "title": "Frontend development",
-                "description": "Responsible for developing and maintaining the frontend of client projects, ensuring a seamless user experience. I collaborated with the backend team to design and implement APIs, ensuring efficient data retrieval and manipulation. Assisted new interns in integrating into the team by providing technical guidance and onboarding support."
+                "title": "Front-end development",
+                "description": "Responsible for developing and maintaining the front-end of client projects, ensuring a seamless user experience. I collaborated with the back-end team to design and implement APIs, ensuring efficient data retrieval and manipulation. Assisted new interns in integrating into the team by providing technical guidance and onboarding support."
             },
             {
-                "title": "Backend development",
-                "description": "I often helped the backend team to develop APIs ensuring efficient data retrieval and manipulation for web application. I also managed to write some SQL queries and scripts to automate repetitive tasks, enhancing database performance and reliability."
+                "title": "Back-end development",
+                "description": "I often helped the back-end team to develop APIs ensuring efficient data retrieval and manipulation for web application. I also managed to write some SQL queries and scripts to automate repetitive tasks, enhancing database performance and reliability."
             },
             {
                 "title": "Version control",
@@ -59,17 +59,17 @@
         "posts": [
             "Lead developer",
             "Full-Stack developer",
-            "Frontend developer"
+            "Front-end developer"
         ],
         "date": "May 2022 - September 2024",
         "description": [
             {
                 "title": "Full-Stack development",
-                "description": "Collaborated with cross-functional teams to develop and maintain client projects,specifically on both web and mobile applications. My role includes building dynamic user interfaces on the frontend and develop secure, scalable backend services to support application logic, data management, and API integrations."
+                "description": "Collaborated with cross-functional teams to develop and maintain client projects,specifically on both web and mobile applications. My role includes building dynamic user interfaces on the front-end and develop secure, scalable back-end services to support application logic, data management, and API integrations."
             },
             {
                 "title": "Database management",
-                "description": "Designed and manage databases alongside the backend team and teamlead."
+                "description": "Designed and manage databases alongside the back-end team and teamlead."
             },
             {
                 "title": "API development",

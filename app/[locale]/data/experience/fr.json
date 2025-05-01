@@ -4,7 +4,7 @@
         "posts": [
             "Développeur desktop (Stage)"
         ],
-        "date": "décembre 2019 - février 2020",
+        "date": "Décembre 2019 - Février 2020",
         "description": [
             {
                 "title": "Développement desktop",
@@ -22,18 +22,18 @@
     },
     "Ingenosya": {
         "posts": [
-            "Développeur Frontend",
+            "Développeur Front-end",
             "Développeur Angular (Stage)"
         ],
         "date": "Avril 2021 - Mai 2022",
         "description": [
             {
-                "title": "Développement Frontend",
-                "description": "Responsable du développement et de la maintenance de la partie frontend des projets clients, en garantissant une expérience utilisateur fluide. J'ai collaboré avec l'équipe backend pour concevoir et implémenter des API, assurant une récupération et une manipulation efficaces des données. J'ai également aidé les nouveaux stagiaires à s'intégrer dans l'équipe en fournissant un accompagnement technique et un soutien à l'intégration."
+                "title": "Développement Front-end",
+                "description": "Responsable du développement et de la maintenance de la partie front-end des projets clients, en garantissant une expérience utilisateur fluide. J'ai collaboré avec l'équipe back-end pour concevoir et implémenter des API, assurant une récupération et une manipulation efficaces des données. J'ai également aidé les nouveaux stagiaires à s'intégrer dans l'équipe en fournissant un accompagnement technique et un soutien à l'intégration."
             },
             {
-                "title": "Développement Backend",
-                "description": "J'ai souvent aidé l'équipe backend à développer des API en garantissant une récupération et une manipulation efficaces des données pour les applications web. J'ai aussi rédigé des requêtes SQL et des scripts pour automatiser les tâches répétitives, améliorant ainsi la performance et la fiabilité des bases de données."
+                "title": "Développement Back-end",
+                "description": "J'ai souvent aidé l'équipe back-end à développer des API en garantissant une récupération et une manipulation efficaces des données pour les applications web. J'ai aussi rédigé des requêtes SQL et des scripts pour automatiser les tâches répétitives, améliorant ainsi la performance et la fiabilité des bases de données."
             },
             {
                 "title": "Version control",
@@ -59,21 +59,21 @@
         "posts": [
             "Lead developer",
             "Développeur Full-Stack",
-            "Développeur Frontend"
+            "Développeur Front-end"
         ],
         "date": "Mai 2022 - Septembre 2024",
         "description": [
             {
                 "title": "Développement Full-Stack",
-                "description": "Collaboration avec des équipes interfonctionnelles pour développer et maintenir les projets clients, notamment pour les applications web et mobiles. Mon rôle inclut la création d'interfaces utilisateur dynamiques côté frontend et le développement de services backend sécurisés et évolutifs pour soutenir la logique des applications, la gestion des données et les intégrations d'API."
+                "description": "Collaboration avec des équipes interfonctionnelles pour développer et maintenir les projets clients, notamment pour les applications web et mobiles. Mon rôle inclut la création d'interfaces utilisateur dynamiques côté front-end et le développement de services back-end sécurisés et évolutifs pour soutenir la logique des applications, la gestion des données et les intégrations d'API."
             },
             {
                 "title": "Gestion des bases de données",
-                "description": "Conception et gestion des bases de données avec l'équipe backend et le chef d'équipe."
+                "description": "Conception et gestion des bases de données avec l'équipe back-end et le chef d'équipe."
             },
             {
                 "title": "Développement d'API",
-                "description": "Développement et intégration d'APIs RESTful, mise en œuvre d'une authentification sécurisée et gestion efficace des données pour soutenir la communication fluide entre le frontend et le backend."
+                "description": "Développement et intégration d'APIs RESTful, mise en œuvre d'une authentification sécurisée et gestion efficace des données pour soutenir la communication fluide entre le front-end et le back-end."
             },
             {
                 "title": "Version control",

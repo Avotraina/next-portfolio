@@ -5,7 +5,7 @@
             "Angular developer"
         ],
         "date": "Apr 2021 - May 2022",
-        "description": "After 6 months, I was hired as a full-time Angular developer. Joined an existing cross-functional development team as an intern to contribute to an ongoing government project as an Angular developer. During the development process, I also collaborated with the backend team to help design and implement APIs and wrote some SQL queries to automated repetitive tasks. After six months, I was hired as a full-time frontend developer and assigned to a new team to work on a client project as a frontend developer ensuring seamless integration with backend services. Assisted new interns in integrating into the team by providing technical guidance and onboarding support.",
+        "description": "After 6 months, I was hired as a full-time Angular developer. Joined an existing cross-functional development team as an intern to contribute to an ongoing government project as an Angular developer. During the development process, I also collaborated with the back-end team to help design and implement APIs and wrote some SQL queries to automated repetitive tasks. After six months, I was hired as a full-time front-end developer and assigned to a new team to work on a client project as a front-end developer ensuring seamless integration with back-end services. Assisted new interns in integrating into the team by providing technical guidance and onboarding support.",
         "technologies": [
             "Angular",
             "Javascript",
@@ -21,12 +21,12 @@
     },
     "Relia consulting": {
         "posts": [
-            "Frontend developer",
+            "Front-end developer",
             "Full-Stack developer",
             "Lead developer"
         ],
         "date": "May 2022 - September 2024",
-        "description": "Joined a small team of developers to work on a client project as a frontend developer. Worked on the frontend part of the project to ensure seamless integration with backend services. Assisted in the development of a web application using Angular, HTML, CSS, and JavaScript. Collaborated with the backend team to help design and implement APIs.",
+        "description": "Joined a small team of developers to work on a client project as a front-end developer. Worked on the front-end part of the project to ensure seamless integration with back-end services. Assisted in the development of a web application using Angular, HTML, CSS, and JavaScript. Collaborated with the back-end team to help design and implement APIs.",
         "technologies": [
             "Angular",
             "Angular Material",
