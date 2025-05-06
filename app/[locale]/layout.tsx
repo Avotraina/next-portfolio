@@ -7,7 +7,9 @@ import React, { Suspense } from "react";
 import { LocaleSelect } from "../hooks/locale-select";
 import Loading from "./loading";
 import { FAQPage, WithContext } from "schema-dts";
-import Head from 'next/head'
+import Head from 'next/head';
+import { Analytics } from '@vercel/analytics/next';
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -215,6 +217,7 @@ export default async function RootLayout({
                   <div className="lg:flex lg:justify-between min-h-screen lg:gap-4">
                     <Header />
                     {children}
+                    <Analytics />
                   </div>
                 </div>
               </div>
