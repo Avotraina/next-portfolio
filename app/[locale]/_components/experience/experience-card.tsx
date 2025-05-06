@@ -5,18 +5,20 @@ type Children = Readonly<{
   position: string[],
   date: string,
   description: { title: string, description: string }[],
-  techs?: string[]
+  techs?: string[],
+  url?: string,
 }>;
 
 // const ExperienceCard: React.FC<Children> = (props) => {
 function ExperienceCard(props: Children) {
 
-  const { company, position, description, techs, date } = props;
+  const { company, position, description, techs, date, url } = props;
 
   return (
     <li className="group flex flex-col px-4 py-4 gap-0 rounded-sm bg-secondary-50 hover:bg-secondary-200 hover:!opacity-100 group-hover/list:opacity-70 transition duration-300 ease-in-out">
       <article>
         <header className="px-4 py-4 rounded-sm">
+          <a href={url} rel="noreferrer noopener" target="_blank">
           <h2 className="font-semibold flex flex-col gap-1">
             <div className="flex flex-row justify-between content-start">
               <div className="font-semibold flex flex-col gap-2">
@@ -36,6 +38,7 @@ function ExperienceCard(props: Children) {
               </span>
             </div>
           </h2>
+          </a>
         </header>
 
         {/* Card body */}

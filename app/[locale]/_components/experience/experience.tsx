@@ -4,7 +4,7 @@ import { useCurrentLocale } from "@/locales/client";
 import SectionTitle from "../shared/section-title";
 import ExperienceCard from "./experience-card";
 // import { experienceData } from "../../data/experience";
-import {experienceData} from "@/app/[locale]/data/experience/index";
+import { experienceData } from "@/app/[locale]/data/experience/index";
 // import experienceItems from "@/app/[locale]/data/experience.json";
 
 type Experience = Readonly<{
@@ -15,6 +15,8 @@ type Experience = Readonly<{
         date: string;
         description: string;
         techs?: string[];
+        url?: string;
+
     }[];
 }>
 
@@ -27,6 +29,7 @@ type T_Experience = Readonly<{
         description: string;
     }[];
     technologies: string[];
+    url?: string;
 }[]>;
 
 
@@ -167,7 +170,7 @@ export default function Experience() {
 
             <ol className="group/list flex flex-col gap-6 ml-0">
                 {experience.map((exp, index) => (
-                    <ExperienceCard key={index} company={exp.company} position={exp.posts} date={exp.date} description={exp.description} techs={exp.technologies}>
+                    <ExperienceCard key={index} company={exp.company} position={exp.posts} date={exp.date} description={exp.description} techs={exp.technologies} url={exp.url}>
 
                     </ExperienceCard>
                 ))}
