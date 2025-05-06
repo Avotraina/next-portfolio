@@ -31,5 +31,8 @@
     },
     "projects": {
         "title": "Projets"
+    },
+    "resume": {
+        "label": "Voir mon CV"
     }
 }
